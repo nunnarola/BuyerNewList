@@ -1,0 +1,3669 @@
+@CHARSET "ISO-8859-1";
+
+
+/**
+	color:#6C7C55;
+	color:#43BECC;
+	color:#FF5A14;
+	color:#e1472f;
+	color:#6C7C55;
+
+	#3F4C45  very dark green to #5A7C55
+	#5A7C55   darker green to #85C9CE
+	#6C7C55   std dark green to #85C9CE
+	#AEB8A1	light green  to #99D3B5
+
+	#ccad68  light brown to #c0c0c0
+	#DBC48E : std beige to #555555
+	#F1E3BE : light beige
+
+	#738D82 : alt green (footer)
+
+	#EC964B orange to #060C3B
+
+	#ccc 	dark gray
+	#bbb 	darker gray
+	#E9EDF0 very light green / gray
+
+	#cc0000   red(fail)
+	#FFE5E5   pink (fail bg)
+
+	https://www.hexcolortool.com
+
+	a.	Main color - dark blue  #060C3B
+b.	Secondary colors - light salmon #FB958A ,  blue/green   #85C9CE
+c.	Tertiary Colors (if required) - eggshell   #F0EAD6, light green  #C4FDFB
+
+
+	blue
+	#142845 (dark) - changed to  #060C3B
+	#406A79 lighter - not changed
+
+	oranges
+	#FE6F61 CHANGED to #FB958A
+
+
+	GREENS
+	#00BFB2	normal CHANGED TO #85C9CE
+	#66D9D1 lighter CHANGED TO #85C9CE
+	#99D3B5 very light (NOT CHANGED)
+
+
+	#ebfff4 very very light (background)
+	#f5fffa almost white
+	#ccf0ed very light grey green
+	#ebf5f2 very very light (background)
+
+
+	Yellow
+	LightYellow (prospects default color)
+
+	**/
+
+
+body {
+
+    font: 14px "Roboto", sans-serif;
+    font-weight: 400;
+    color: black;
+    text-shadow: none;
+    filter: none;
+    font-smooth: always;
+    margin: 0px;
+    background-color: #fefefe;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+
+}
+
+form {
+    padding: 0px;
+    margin: 0px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    background: white;
+}
+
+input[type=button] {
+    -webkit-appearance: none;
+    background: white;
+}
+
+
+h2 {
+    float: left;
+    clear: both;
+    width: 95%;
+    font: 16px 'Roboto', Arial;
+    display: block;
+    clear: both;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+}
+
+h3 {
+    float: left;
+    clear: both;
+    width: 95%;
+    font: 13px 'Roboto', Arial;
+    padding: 0px 0px 10px 0px;
+}
+
+#page {
+    width: 100%;
+}
+
+#contentholder {
+    width: 1024px;
+    padding: 10px 0px 20px 0px;
+    margin: 0px auto;
+    border: 0px solid red;
+}
+
+#bgwrap {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /**background: rgba(0, 0, 0, .05);**/
+    border: 0px solid green;
+}
+
+
+/*** overrides for landing page ***/
+#bgwrap .intro {
+    background: white;
+    padding-top: 60px;
+}
+
+#bgwrap .intro__inner-content {
+    padding-top: 100px;
+    width: 50%;
+    padding-right: 30px;
+    width: calc(50% - 30px);
+}
+
+#bgwrap .intro__inner-image {
+    margin-right: -350px;
+    width: calc(50% + 350px);
+}
+
+#bgwrap .intro__inner-image img {
+    padding-top: 20px;
+    width: 90%;
+}
+
+
+@media only screen and (max-width: 840px) {
+
+    #bgwrap .intro__inner-content h1 {
+        text-align: center;
+        margin: -20px 0px 40px 0px;
+    }
+
+    #bgwrap .intro__inner-content {
+        padding-top: 50px;
+        padding-right: 0px;
+    }
+
+    #bgwrap .intro__inner-content p.bg.bbsBg {
+        text-align: center;
+        margin: 15px 0px 15px 0px;
+    }
+
+    #bgwrap .intro__inner-content p.bg.bbsBg.lastP {
+        margin: 15px 0px 35px 0px;
+    }
+
+    #bgwrap .intro__inner-image {
+        display: none;
+    }
+
+    #bgwrap .intro__inner-content {
+        width: 100%;
+    }
+
+    #bgwrap .intro__inner-start {
+        text-align: center;
+    }
+
+    #buySellOptions {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .intro__inner-content .intro__inner-start input {
+        padding: 15px;
+    }
+
+    .intro__inner-content .intro__inner-start .button {
+        padding: 15px;
+    }
+}
+
+
+/** Tooltip ***/
+
+
+.ttabscontainer {
+    position: absolute;
+}
+
+.ttposition {
+    position: relative;
+    top: 60px;
+    left: 0px;
+}
+
+.ttbeaka {
+    height: 0;
+    width: 0;
+    border-bottom: 9px solid #060C3B;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    left: 0px;
+    top: 0px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.ttbeakb {
+    position: relative;
+    left: -9px;
+    top: 0px;
+    height: 0;
+    width: 0;
+    border-bottom: 9px solid #060C3B;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    z-index: 2;
+}
+
+.ttmessage {
+    background-color: #060C3B;
+    border: solid 0px #ffffff;
+    position: relative;
+    color: white;
+    top: -1px;
+    z-index: 9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #999;
+    -moz-box-shadow: 2px 2px 2px #999;
+    -webkit-box-shadow: 2px 2px 2px #999;
+}
+
+.popstatus {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    font: 20px 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #060C3B;
+}
+
+.popstatus i {
+    margin: 0px 20px 0px 0px;
+    font-size: 20px;
+}
+
+.fa-question-circle.tooltip {
+    cursor: help;
+}
+
+
+/** Add / Edit Prop ***/
+
+.formfldwrap label {
+    display: block;
+    padding: 5px 5px 5px 5px;
+    font: 13px 'Roboto', Arial;
+}
+
+.formfldwrap {
+    float: left;
+}
+
+.formfldwrap .failval {
+    border: 1px solid #EB0000;
+}
+
+.formfldwrap .failval::before {
+    color: #EB0000;
+}
+
+.formfldwrap .failval input, .formfldwrap .failval select {
+}
+
+.formfldwrap .okval {
+    border: 1px solid #999;
+}
+
+.formfldwrap .okval::before {
+    color: #060C3B;
+}
+
+.formfldwrap .okval input, .formfldwrap .okval select {
+    color: #060C3B;
+}
+
+.AdInputInfo {
+    padding: 0px 0px 10px 0px;
+}
+
+.FailMessage {
+    color: #EB0000;
+}
+
+.aperm {
+    color: #EB0000;
+}
+
+#errordiv {
+    background: white;
+    color: #EB0000;
+    float: left;
+    text-align: center;
+    padding: 7px 2% 7px 2%;
+    width: 96%;
+    margin: 20px 0px 0px 0px;
+}
+
+#caution i {
+    line-height: 30px;
+    float: left;
+    font-size: 24px;
+    color: #EB0000;
+    padding-right: 20px;
+}
+
+#errtext {
+    line-height: 30px;
+    float: left;
+    font: 20px "Roboto", "sans-serif", Arial;
+}
+
+.stdlink {
+    color: #FB958A;
+}
+
+.selwrap {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #999;
+    background: transparent;
+    padding: 0px 2px 2px 2px;
+    /**text-shadow: #fff 1px 1px 0;**/
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    height: 24px;
+    display: inline-block;
+    z-index: 10;
+
+}
+
+.selwrap select {
+    display: inline-block;
+    background: transparent;
+    height: 25px;
+    font: 16px "Roboto", sans-serif;
+    font-weight: 400;
+    border: 0px solid white;
+    -webkit-appearance: none;
+    padding-left: 3px;
+
+}
+
+.intextwrap {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #999;
+    background: transparent;
+    padding: 0px;
+    /**text-shadow: #fff 1px 1px 0;**/
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    display: inline-block;
+    z-index: 10;
+
+}
+
+.intextwrap input {
+    display: inline-block;
+    background: transparent;
+    height: 18px;
+    font: 16px "Roboto", sans-serif;
+    line-height: 16px;
+    padding: 4px;
+    font-weight: 300;
+    border: 0px solid white;
+    -webkit-appearance: none;
+    padding-left: 3px;
+
+}
+
+.compuls {
+    -webkit-box-shadow: inset 0 1px 1px #efefef, 0 0 3px #ddd;
+    -moz-box-shadow: inset 0 1px 1px #efefef, 0 0 3px #ddd;
+    box-shadow: inset 0 1px 1px #efefef, 0 0 3px #ddd;
+}
+
+
+.selwrap select option, .intextwrap input {
+    padding-left: 5px;
+    font: 16px "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.intextwrap input {
+    width: 98%;
+}
+
+.selwrap:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #060C3B;
+    right: 7px;
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+}
+
+.selwrap:focus {
+    border-color: #ccc;
+}
+
+.selwrap:hover, .intextwrap:hover, .select2-selection--multiple {
+    box-shadow: 0 0 2px #ddd;
+    -moz-box-shadow: 0 0 2px #ddd;
+    -webkit-box-shadow: 0 0 2px #ddd;
+}
+
+.infobox .intextwrap .inptxtbx {
+    letter-spacing: 0.05em;
+    font: 16px "Roboto", "sans-serif", Arial;
+}
+
+.infoboxpreamble {
+    display: inline-block;
+    font: 16px 'Roboto', sans-serif;
+    padding: 10px;
+    color: #060C3B;
+    background: white;
+}
+
+.submbttnsection {
+    width: 100%;
+    text-align: center;
+}
+
+.subbutwrap {
+    padding: 0px;
+    display: inline-block;
+    margin: 20px 0px 50px 0px;
+    border: 4px solid #ee6f61;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background: #ee6f61;
+}
+
+.subbutwrap input {
+    font: 20px "Roboto", "Sans Serif";
+    display: inline-block;
+    border: 0px;
+    background: #ee6f61;
+    color: white;
+    padding: 5px 20px 5px 20px;
+
+}
+
+
+.subbutwrap input:hover {
+
+    border: 0px;
+    cursor: pointer;
+
+}
+
+.charleftcnt {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 12px;
+    height: 12px;
+    font: 10px "Roboto", sans-serif;
+}
+
+.pghead {
+    float: left;
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+}
+
+.pghead h1 {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+    color: #060C3B;
+    font: 38px 'Roboto', Arial;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pgwidthdiv {
+    background: #fefefe;
+    display: inline-block;
+    width: 96%;
+    padding: 2%;
+    margin: 0px auto;
+    font: 18px "Roboto", "sans-serif", Arial;
+    font-weight: 300;
+}
+
+.pgwidthdiv h2 {
+    font: 40px Roboto, sans-serif;;
+    font-weight: 300;
+    margin: 0px auto;
+    padding: 10px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    color: #060C3B;
+}
+
+.stdpgsubhdg {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    font: 30px Roboto, sans-serif;;
+    font-weight: 300;
+}
+
+#placestreetnumberwrap .intextwrap, #placeunitwrap .intextwrap {
+    width: 150px;
+}
+
+#placestreetnamewrap .intextwrap, #placecomplexnamewrap .intextwrap, #suburbid {
+    width: 300px;
+}
+
+#addrholder {
+    width: 100%;
+    display: inline-block;
+}
+
+#suburbidwrap .select2-selection {
+    height: 31px;
+    font: 16px "Roboto", sans-serif;
+    font-weight: 300;
+    color: black;
+    border: 0px solid #999;
+    border-radius: 2px;
+    webkit-box-shadow: inset 0 1px 1px #efefef, 0 0 3px #ddd;
+    -moz-box-shadow: inset 0 1px 1px #efefef, 0 0 3px #ddd;
+    box-shadow: inset 0 1px 1px #efefef, 0 0 3px #ddd;
+}
+
+
+/** Home Page ***/
+#hphead {
+    float: left;
+    width: 100%;
+    padding: 60px 0px 0px 0px;
+}
+
+#logodiv {
+    float: left;
+    width: 95%;
+    margin: 0 0 0 4%;
+}
+
+#logodiv img {
+    float: left;
+    border: 0px;
+    padding: 0px;
+    width: 200px;
+}
+
+#hphead h1 {
+    float: left;
+    width: 100%;
+    padding: 70px 0px 30px 0px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0px 1px 2px;
+    font: 50px 'Roboto', Arial;
+    font-weight: 300;
+    text-align: center;
+}
+
+#hpchoice {
+    margin: 7% 0 20% 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.hpchchld {
+    width: 320px;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 0px;
+    vertical-align: top;
+}
+
+#hpsell {
+    margin-left: 10%;
+}
+
+.hpopthdr {
+    width: 96%;
+    margin: 10px 2% 20px 2%;
+    float: left;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+.hpopthdr h3 {
+    float: none;
+    display: inline-block;
+    width: auto;
+    font: 30px 'Roboto', Arial;
+    font-weight: 300;
+    color: white;
+    border: 0px solid rgba(255, 255, 255, 0.7);
+    margin: 0px auto;
+}
+
+.hpsuboptxt {
+    color: white;
+    font: 14px Roboto, sans-serif;
+    width: 100%;
+    font-weight: 300;
+    padding: 0px 0px 10px 0px;
+}
+
+.hpsbuycity {
+    color: white;
+    font: 16px Roboto, sans-serif;
+    font-weight: 300;
+}
+
+#tb {
+    width: 100%;
+    height: 48px;
+    padding-top: 0px;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.3);
+    text-align: right;
+    box-shadow: 0 0;
+    z-index: 990;
+    position: absolute;
+}
+
+.tbdark {
+    background-color: white;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tblight {
+    background: rgba(0, 0, 0, .5);
+}
+
+.nobckg.tblight {
+    background-color: #060C3B;
+}
+
+#hpabout {
+    background: #fefefe;
+    display: inline-block;
+    width: 96%;
+    padding: 2%;
+    margin: 0px auto;
+    font: 18px "Roboto", "sans-serif", Arial;
+    font-weight: 300;
+}
+
+#hpabout h2 {
+    font: 40px Roboto, sans-serif;
+    font-weight: 300;
+    margin: 0px auto;
+    padding: 10px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    color: #060C3B;
+}
+
+#tb #tbburgermenu {
+    float: left;
+    width: 50px;
+    padding: 5px 0px 0px 0px;
+    display: none;
+}
+
+#Burgerpack {
+    display: inline-block;
+    width: 28px;
+    height: 22px;
+    margin: 3px;
+}
+
+#Burger {
+    width: 20px;
+}
+
+#Burger .Burgerbar {
+    height: 3px;
+    width: 100%;
+    float: left;
+    margin: 1px 0px 4px 0px;
+    clear: both;
+    background: #060C3B;
+    border-radius: 2px;
+}
+
+.tbmenhdr {
+    vertical-align: top;
+}
+
+.tbmenhdr span {
+    letter-spacing: 1px;
+    font: 20px "Roboto", "sans-serif", Arial;
+    font-weight: 500;
+    text-decoration: none;
+    color: #060C3B;
+}
+
+.tbmenhdr span:hover {
+    text-decoration: none;
+}
+
+.tbmenhdr a {
+    letter-spacing: 1px;
+    font: 20px "Roboto", "sans-serif", Arial;
+    font-weight: 500;
+    text-decoration: none;
+    color: #060C3B;
+    vertical-align: top;
+}
+
+.tbmenhdr a:hover {
+    text-decoration: underline;
+}
+
+#burgmencnt {
+    text-align: left;
+    width: 40px;
+    float: left;
+    padding-top: 3px;
+    margin-top: 2px;
+}
+
+#tb #tblogo {
+    float: left;
+    padding: 2px 10px 0px 10px;
+}
+
+#tb #tblogo img {
+    border: 0px;
+    height: 40px;
+    margin-top: -3px;
+}
+
+#moblogo {
+    display: none;
+}
+
+#stdlogo {
+    display: inline;
+}
+
+#tb .hoverhd {
+    text-align: left;
+}
+
+#menbord {
+    border-top: 5px solid #FFF;
+    float: right;
+    margin: 0px 0px 0px 0px;
+}
+
+#tb #tbsignup {
+    padding-right: 25px;
+    margin-left: -10px;
+}
+
+#tb #tblogin {
+    padding-right: 20px;
+}
+
+#tb ul, #tb li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hovermenucont {
+    display: none;
+    position: relative;
+    top: 12px;
+    left: 0px;
+    text-align: left;
+}
+
+.hovermenucont li {
+    position: relative;
+    width: 260px;
+    left: 0px;
+}
+
+#tb .hovermenucont li .fa {
+    color: black;
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+#tb .hovermenucont li a:hover {
+    text-decoration: underline;
+}
+
+.menuselected {
+    border-top: 0px solid transparent;
+}
+
+.menuselected #Burger .Burgerbar {
+    background: white;
+}
+
+.menuselected #burgmencnt {
+    padding-top: 3px;
+}
+
+#tb #burgmencnt .hoverhd {
+    display: inline-block;
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+}
+
+#tb .tbheadntxt {
+    cursor: default;
+    text-align: center;
+    display: block;
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#tb .logdedInHdn .tbheadntxt {
+    text-align: right;
+}
+
+#tb #tbprofile.logdedInHdn {
+    width: 50px;
+}
+
+
+#tb tbmenitem.menuselected {
+    background: white;
+}
+
+#tb .menuselected .tbheadntxt {
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+#tb .hovermenucont {
+    text-align: left;
+    border-color: white;
+    padding: 5px 0px 0px 0px;
+    margin: -10px;
+}
+
+#tb .hovermenucont li {
+    left: 0px;
+    background: white;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.3), 0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+}
+
+#tb .hovermenucont .tbmenfli a {
+    padding-top: 20px;
+}
+
+#tb .hovermenucont .tbmenlli a {
+    padding-bottom: 10px;
+}
+
+
+#tb #tbprofile .hovermenucont {
+    margin: -31px 0px 0px 38px;
+}
+
+#tb #burgmencnt .hovermenucont {
+    margin-left: -5px;
+    margin-top: -15px;
+}
+
+#tb #burgmencnt .ttposition {
+    top: 0;
+    left: -10px;
+}
+
+#tb #tbprofile .ttposition {
+    left: 120px;
+}
+
+#tb .ttbeaka {
+    border-bottom: 10px solid white;
+}
+
+#tb .menbeakhld {
+    display: none;
+    height: 0px;
+}
+
+#tb .menconli {
+    background: white;
+    color: black;
+}
+
+#tb .ttposition {
+    top: 0;
+    left: 65px;
+    margin-top: -5px;
+    float: right;
+}
+
+#tb .menucontframe {
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+    background: none;
+}
+
+.tbmenulnkcat {
+    border-bottom: 1px solid white;
+    width: 94%;
+    display: inline-block;
+    margin: 5px 3% 5px 3%;
+    padding: 0px 0px 10px 0px;
+}
+
+.tbmenulnkcat.nobord {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.tbmenulnkcat h4 {
+    color: black;
+    padding: 10px 0px 5px 0px;
+    margin: 0px;
+    font: 20px Roboto, Arial;
+    font-weight: 500;
+    width: 100%;
+    display: inline-block;
+}
+
+.sttblink {
+    display: inline-block;
+    padding: 8px 0 7px 5%;
+    width: 95%;
+}
+
+.sttblink img {
+    float: left;
+    padding: 0px 12px 0px 0px;
+    height: 18px;
+}
+
+.sttblink a {
+    font: 14px Roboto, sans-serif;
+    font-weight: 400;
+    color: black;
+    padding: 0px;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.mainmenlink {
+    display: inline-block;
+    padding: 3px 0 5px 3%;
+    width: 95%;
+}
+
+.mainmenlink a {
+    font: 18px Roboto, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 0px 0px 0px 0px;
+    line-height: 22px;
+}
+
+.mainmenlink i {
+    font-size: 18px;
+    color: white;
+    line-height: 22px;
+}
+
+#tbburgermenu .menucontframe {
+    padding: 10px 10px 5px 0px;
+}
+
+
+.sttblink.menuIcon {
+    padding-top: 4px;
+    padding-bottom: 0px;
+    height: auto;
+}
+
+.sttblink.menuIcon span {
+    margin-left: 4px;
+    padding-right: 0px;
+    text-align: left;
+    width: 38px;
+    display: inline-block;
+}
+
+#tb .hovermenucont li .sttblink.menuIcon .fa {
+    font-size: 24px;
+    position: relative;
+    left: 4px;
+}
+
+.sttblink.menuIcon img {
+    border: 0px;
+    padding: 0px;
+    width: 30px;
+}
+
+.sttblink.menuIcon a {
+    font: 14px Roboto, sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 4px;
+    text-transform: uppercase;
+}
+
+
+.sttblink .addLink {
+    float: right;
+    width: 100px;
+    height: 14px;
+}
+
+.sttblink .addLink a {
+    position: relative;
+    top: 1px;
+    margin: 0px 15px 0px 0px;
+    background: white;
+    float: right;
+    text-decoration: none;
+    color: #FB958A;
+    font: 12px Roboto, sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 2px 5px 1px 5px;
+}
+
+.sttblink .addLink a {
+    color: #FB958A;
+}
+
+#tb .sttblink .addLink .fa {
+    color: #FB958A;
+    font-size: 12px;
+}
+
+#tb .sttblink .addLink a:hover {
+    text-decoration: none;
+}
+
+.menuDivider {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #efefef;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+
+.tbmenitem {
+    display: inline-block;
+    padding: 8px 0px 0px 0px;
+    margin: 0px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.tbheadntxt .fa-chevron-down {
+    font-size: 12px;
+    padding-left: 3px;
+    position: relative;
+    top: 6px;
+    vertical-align: top;
+}
+
+#tbsellnow a {
+    font: 16px Roboto, sans-serif;
+    font-weight: 500;
+    color: #060C3B;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+}
+
+#tbsellnow {
+    background: white;
+    padding: 16px 30px 0px 0px;
+}
+
+#tbsellnow i {
+    color: #060C3B;
+}
+
+#tbsearchnow {
+    float: left;
+    background: #85C9CE;
+    width: 150px;
+    height: 100%;
+    margin-top: -2px;
+    padding: 2px 0px 0px 0px;
+    margin-left: 0;
+}
+
+#tbsearchnow:hover a {
+    text-decoration: underline;
+}
+
+#tbsearchnow a {
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+    font: 14px Roboto, sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    padding: 17px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+#tbselllink {
+    float: left;
+    background: #FB958A;
+    width: 150px;
+    height: 100%;
+    margin-top: -2px;
+    padding: 2px 0px 0px 0px;
+    margin-left: 15%;
+}
+
+#tbselllink:hover a {
+    text-decoration: underline;
+}
+
+#tbselllink a {
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+    font: 14px Roboto, sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    padding: 17px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#tblinksep {
+    background: #ccf0ed;
+    float: left;
+    width: 20px;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    border: 0px;;
+}
+
+#tbsellprop {
+    width: 70px;
+}
+
+#tbsellprop .hovermenucont li {
+    left: -50px;
+}
+
+/**
+#tb #tbsellprop .hovermenucont li{background:#FB958A;border-color:#FB958A;}
+#tbsellprop .ttbeaka{border-bottom: 9px solid #FB958A;}
+#tbsellprop .ttbeakb{border-bottom: 9px solid #FB958A;}
+#tbsellprop .tbmenhdr span{color:#060C3B;}
+
+
+#tbbuyprop .tbmenhdr span{color:#060C3B;}
+#tb #tbbuyprop .hovermenucont li{background:#85C9CE;border-color:#060C3B;}
+#tbbuyprop .ttbeaka{border-bottom: 9px solid #85C9CE;}
+#tbbuyprop .ttbeakb{border-bottom: 9px solid #85C9CE;}
+**/
+
+#tbbuyprop {
+    width: 70px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+#tb #tbbuyprop .hovermenucont li {
+    left: -50px;
+}
+
+#tb #adminmenu .hovermenucont li {
+    left: -30px;
+}
+
+#adminmenu {
+    margin-right: 30px;
+}
+
+#burgerbuying, #burgerselling {
+    display: none;
+}
+
+#burgerbuying {
+    padding-top: 0px;
+}
+
+#burgerselling {
+    padding-bottom: 0px;
+}
+
+.favecnthlder, .unreadcnthlder, .newoffercnthlder {
+    vertical-align: top;
+    font: 10px 'Roboto', sans-serif;
+    padding: 0px 0px 1px 0px;
+    margin: 0px;
+    width: 13px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -9px;
+}
+
+.favecnthlder {
+    background: #555555;
+    color: white;
+}
+
+.unreadcnthlder {
+    background: #060C3B;
+    color: white;
+}
+
+.newoffercnthlder {
+    background: #FB958A;
+    color: white;
+}
+
+#tb .favecnthlder, #tb .unreadcnthlder, #tb .newoffercnthlder {
+    font: 10px 'Roboto', sans-serif;
+    color: white;
+    vertical-align: top;
+}
+
+#tb .menucontframe .favecnthlder, #tb .menucontframe .unreadcnthlder, #tb .menucontframe .newoffercnthlder {
+    top: -5px;
+}
+
+#tb .menucontframe .newoffercnthlder {
+    background: white;
+    color: #060C3B;
+}
+
+#tb .tbheadntxt .newoffercnthlder {
+    color: white;
+}
+
+
+.messmore .unreadcnthlder {
+    top: -6px;
+}
+
+#tb .listingcnthlder {
+    background: #555555;
+    font: 10px 'Roboto', sans-serif;
+    padding: 0px 2px 3px 2px;
+    color: white;
+    margin: 0px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -9px;
+}
+
+#tb #tbprofile {
+    width: 125px;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+#tb #tbprofile .hovermenucont li {
+    left: -100px;
+    width: 200px;
+}
+
+#tb #tblogohld {
+    float: left;
+    padding: 5px 0px 5px 0px;
+}
+
+#tb #tbburgermenu .hovermenucont {
+    padding-top: 0px;
+}
+
+#tbprpic {
+    overflow: hidden !important;
+    width: 32px;
+    height: 32px;
+    border: 4px solid #E5E5E5;
+    display: inline-block;
+    margin-right: 3px;
+    position: relative;
+    top: -8px;
+}
+
+#tbprpic i {
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 24px;
+    margin-top: 4px;
+}
+
+#tbprpic img {
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.profpic.rounddiv {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 3px;
+}
+
+.profpic.rounddiv i {
+    position: relative;
+    top: 0px;
+    left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profpic.rounddiv img {
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.rounddiv {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.tbmylf {
+    vertical-align: top;
+}
+
+.ctalnk {
+    font: 18px "Roboto", "sans-serif", Arial;
+    font-weight: 400;
+    background: white;
+    color: #060C3B;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 7px 12px 8px 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ctalnk i {
+    margin-left: 7px;
+}
+
+.ctalnk:hover {
+    text-decoration: underline;
+    color: #060C3B;
+}
+
+#hpsellnk:hover {
+    color: #060C3B;
+    background: white;
+    border-color: white;
+}
+
+#hpsellnk {
+    background: #85C9CE;
+    color: white;
+}
+
+#hpsellnk i {
+    margin: 0px 10px 0px 0px;
+}
+
+#hpbuyjbg {
+    margin-left: 15px;
+}
+
+/*** Footer ***/
+#footer {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px 30px 0px;
+    margin: 0px;
+    background: #060C3B;
+    text-align: center;
+}
+
+.footercell {
+    float: none;
+    width: 250px;
+    padding: 20px 10px 10px 10px;
+    margin: -2px 0px 0px 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    border-top: 0px solid white;
+}
+
+.ftcellhd {
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+    height: 70px;
+}
+
+.ftcellhd.ftshorter {
+    height: 50px;
+}
+
+#fttouchhd, #ftschhd {
+    color: white;
+    text-decoration: none;
+}
+
+.ftcellhd h2 {
+    font: 24px Roboto, sans-serif;
+    font-weight: 300;
+    color: white;
+    width: 96%;
+    border-bottom: 0px;
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.ftcellcont {
+    font: 16px "Roboto", "sans-serif", Arial;
+    font-weight: 300;
+    color: black;
+}
+
+#logofoot {
+    float: left;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    height: 180px;
+}
+
+#logofoot img {
+    float: left;
+    border: 0px;
+    height: 60px;
+}
+
+#TCs {
+    width: 96%;
+    padding: 2%;
+    display: inline-block;
+    font: 12px "Roboto", "sans-serif", Arial;
+    font-weight: 300;
+    color: black;
+    background: white;
+}
+
+#TCs a {
+    color: black;
+    text-decorarion: underline;
+    font: 12px "Roboto", "sans-serif", Arial;
+}
+
+.ftcellcont a {
+    font: 16px "Roboto", "sans-serif", Arial;
+    text-decoration: none;
+    width: 100%;
+    clear: both;
+    float: left;
+    color: white;
+    padding: 0px 0px 8px 0px;
+}
+
+.ftcellcont a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.ftcellcont.soclinks {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.ftcellcont.soclinks a {
+    display: inline-block;
+    padding: 0px 7px 0px 7px;
+    clear: none;
+    width: auto;
+    float: none;
+}
+
+#footabout {
+    diplay: inline-block;
+}
+
+#footoobpre {
+    border: 0px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#footoobpre div {
+    display: inline-block;
+}
+
+#footoobpre img {
+    border: 0px;
+}
+
+
+#footabout i, #footcontact i {
+    font-size: 20px;
+    vertical-align: top;
+}
+
+#footabout .fa-map-marker, #footcontact .fa-map-marker {
+    font-size: 24px;
+}
+
+#footabout span, #footabout span a, #footcontact span, #footcontact span a {
+    display: block;
+    float: right;
+    font-size: 14px;
+    width: 215px;
+    padding-left: 0px;
+}
+
+#footabout p, #footcontact p {
+    color: white;
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+    float: left;
+    width: 100%;
+}
+
+#footabout #ftcodesc, #footcontact #ftcodesc {
+    float: left;
+    color: #efefef;
+    width: 100%;
+    border: 1px solid white;
+    margin: 17px 0px 20px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 5px 0px 10px 0px;
+    font: 16px Roboto, Arial;
+    color: white;
+    font-weight: 400;
+}
+
+#footabout .soclinks .fa {
+    font-size: 30px;
+}
+
+.ftcities {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+.ftcities a {
+    font: 18px "Roboto", "sans-serif", Arial;
+    text-decoration: none;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+
+.ftareas a {
+    font: 14px "Roboto", "sans-serif", Arial;
+    float: left;
+    clear: both;
+    width: 98%;
+    padding: 0px 0px 3px 2%;
+    color: #eee;
+}
+
+.ftcitnxt {
+    padding-top: 20px;
+}
+
+/** Content  Pages **/
+.pgleftcol {
+    width: 70%;
+    float: left;
+    border: 0px solid red;
+}
+
+.pgrightcol {
+    width: 30%;
+    float: right;
+    border: 0px solid blue;
+}
+
+.infobox {
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 50px 0px;
+    border: 0px;
+    background: white;
+    float: left
+}
+
+.infobox .infoboxhdr {
+    width: 100%;
+    float: left;
+    background: #060C3B;
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.infobox .infoboxhdr h2 {
+    width: 96%;
+    padding: 2%;
+    color: white;
+    float: left;
+    font: 24px Roboto, Arial;
+    font-weight: 300;
+}
+
+.infobox .infoboxct {
+    width: 96%;
+    padding: 2%;
+    color: #060C3B;
+    float: left;
+    font: 16px "Roboto", "sans-serif", Arial;
+}
+
+.srchfrm .formfldwrap {
+    margin: 0px 0px 20px 10px;
+}
+
+.srchfrm label {
+    display: block;
+    padding: 5px 2% 2px 2%;
+    font: 13px 'Roboto', Arial;
+    width: 96%;
+}
+
+.srchfrm .selection .select2-selection {
+    border: 1px solid #999;
+    background: transparent;
+    padding: 0px 2px 0px 2px;
+    text-shadow: #fff 1px 1px 0;
+    border-radius: 0px;
+}
+
+.uploadimgprev {
+    display: inline-block;
+    width: 47%;
+    padding-left: 3%;
+    padding-bottom: 20px;
+}
+
+.uploadimgprev img {
+    border: 0px;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+}
+
+#contentholder.profcont {
+    horizontal-align: center;
+    text-align: center;
+}
+
+.profilecatg {
+    text-align: left;
+    display: inline-block;
+    width: 300px;
+    padding: 10px 20px 10px 10px;
+    vertical-align: top;
+    horizontal-align: center;
+    background: white;
+}
+
+.profilecatg .infobox {
+    width: 100%;
+    margin: 0px auto;
+    float: none;
+}
+
+.profilecatg .infoboxhdr {
+    text-align: center;
+}
+
+.profilecatg .AdInputInfo {
+    font-size: 14px;
+}
+
+.profilecatg .listinlabel {
+    padding-left: 0px;
+}
+
+.profilecatg .formfldwrap {
+    width: 100%;
+}
+
+.profilecatg .intextwrap {
+    width: 230px;
+}
+
+.profilecatg .intextwrap input {
+    font-weight: 400;
+    color: #060C3B;
+}
+
+.upok {
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.upok .fa-check-circle {
+    color: green;
+    font-size: 28px;
+    margin: -5px 0px 0px 10px;
+    vertical-align: top;
+}
+
+.upok .fa-times {
+    color: red;
+    font-size: 28px;
+    margin: -5px 0px 0px 10px;
+    vertical-align: top;
+}
+
+.upok .fa-spin {
+    color: #060C3B;
+    font-size: 20px;
+    margin: 5px 0px 0px 10px;
+}
+
+.profval {
+    font-size: 16px;
+    float: left;
+    width: 235px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.profilecatg .infobox .infoboxct .prochg {
+    line-height: 14px;
+    font-size: 14px;
+    margin: 0px;
+    color: #060C3B;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#chgctd {
+    color: white;
+    text-decoration: none;
+    cursor: default;
+}
+
+.attend {
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    background: #FFE5E5;
+}
+
+#profladdph {
+    padding-right: 10px;
+    width: calc(100% - 12px);
+}
+
+.profsub, .versub {
+    margin: 0px 0px 0px 5px;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    padding: 1px 5px 1px 5px;
+    background: white;
+    border: 2px solid #85C9CE;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font: 16px 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #060C3B;
+    cursor: pointer;
+    vertical-align: top;
+    height: 32px;
+}
+
+.profsub {
+    display: none;
+}
+
+.versub {
+    display: inline-block;;
+}
+
+#useridver .prochg, #useridver .chgpg {
+    text-decoration: underline;
+    color: #060C3B;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nloin {
+    font-weight: 300;
+    max-width: 600px;
+    display: inline-block;
+    width: 96%;
+    margin: 100px 2% 100px 2%;
+    font: 18px 'Roboto', sans-serif;
+    text-align: center;
+    color: #060C3B;
+}
+
+.nloin a {
+    color: #060C3B;
+}
+
+#verstatus .formfldwrap {
+    padding-bottom: 15px;
+}
+
+.vverhld .AdInputInfo {
+    float: left;
+    margin-top: 10px;
+}
+
+.vverhld .prochg {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.verval {
+    font-size: 16px;
+    float: left;
+    width: 235px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.defob {
+    display: none;
+}
+
+#mobpin {
+    width: 100%;
+}
+
+.preambl {
+    display: none;
+    font: 14px 'Roboto', sans-serif;
+    padding: 5px 0% 5px 0%;
+    width: 100%;
+    display: inline-block;
+    color: #060C3B;
+    font-weight: 300;
+}
+
+.profilecatg #pinentry .intextwrap {
+    width: 100px;
+}
+
+.resendpin, .chgpg {
+    cursor: pointer;
+    text-decoration: underline;
+    font: 14px 'Roboto', sans-serif;
+    padding: 5px 0px 5px 10px;
+    color: #060C3B;
+    font-weight: 300;
+}
+
+.resendpin {
+    display: inline-block;
+    margin-top: -3px;
+    color: #999;
+    padding: 5px 0px 0px 20px;
+    position: relative;
+    bottom: 2px;
+}
+
+.chgpg {
+    display: inline-block;
+}
+
+.smallnote {
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    font-family: Roboto, sans-serif;
+}
+
+#profpic {
+    margin: 20px 10px 10px 0px;
+    overflow: hidden;
+    border: 1px solid #c0c0c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+#profpic img {
+    padding: 0px;
+    border: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+#chpcbt, #delpcbt {
+}
+
+#chpcbt {
+    left: -27px;
+}
+
+#delpcbt {
+    left: -32px;
+}
+
+.prfldholder {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.prfldholder i {
+    font-size: 30px;
+    color: #060C3B;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+}
+
+.ermhldre {
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    color: #EB0000;
+    text-align: center;
+}
+
+.ermhldre i {
+    padding-right: 20px;
+}
+
+.ermhldre a {
+    color: #EB0000;
+}
+
+.idversep {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#profpicloader {
+    width: 295px;
+    display: none;
+}
+
+#profpicloader .plupload_header {
+    display: none;
+}
+
+#profpicloader .plupload_filelist_header {
+    background: none;
+}
+
+#profpicloader .plupload_button {
+    padding: 5px;
+    font-size: 16px;
+    width: 100px;
+    background: none;
+    background-image: none;
+}
+
+#profpicloader .picloadcontainer.apic.theprime {
+    border-color: yellow;
+}
+
+#profpicloader .picloadcontainer.apic.theprime .chgprime {
+    display: none;
+}
+
+#profpicloader .plupload_filelist_header {
+    display: none;
+}
+
+#profpicloader .plupload_filelist {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#profpicloader .plupload_filelist_footer {
+    display: none;
+}
+
+#profpicloader .picloadcontainer {
+    margin: 10px 0px 0px 0px;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    background: white;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    width: 290px;
+    height: 50px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#profpicloader .uploadcontainer {
+    width: 134px;
+    display: inline-block;
+}
+
+#profpicloader .plupload_droptext {
+    margin: 0px;
+    float: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    padding: 10px 0px 10px 0px;
+    background: white;
+    border: 2px dashed #85C9CE;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font: 16px 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #060C3B;
+}
+
+#profpicloader .addfilesbuttn {
+    margin: 0px;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    width: 90px;
+    padding: 10px 10px 10px 10px;
+    background: white;
+    border: 2px solid #85C9CE;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font: 16px 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #060C3B;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#profpicloader .addfilesbuttn:hover {
+    color: white;
+    background: #85C9CE;
+}
+
+#profpicloader .addfilesbuttn i {
+    padding-right: 10px;
+}
+
+#profpicloader .addfilesep {
+    margin: 0px;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 8px 15px 8px;
+    background: white;
+    border: 0px;
+    font: 14px 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #060C3B;
+    position: relative;
+    vertical-align: top;
+    top: -5px;
+}
+
+.loadbttncontainer {
+    cursor: pointer;
+    float: left;
+}
+
+.picloadbttncontainer {
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+#iddocloader {
+    width: 300px;
+    display: none;
+}
+
+#iddocloader .plupload_header {
+    display: none;
+}
+
+#iddocloader .plupload_filelist_header {
+    background: none;
+}
+
+#iddocloader .plupload_button {
+    padding: 5px;
+    font-size: 16px;
+    width: 100px;
+    background: none;
+    background-image: none;
+}
+
+#iddocloader .picloadcontainer.apic.theprime {
+    border-color: yellow;
+}
+
+#iddocloader .picloadcontainer.apic.theprime .chgprime {
+    display: none;
+}
+
+#iddocloader .plupload_filelist_header {
+    display: none;
+}
+
+#iddocloader .plupload_filelist {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#iddocloader .plupload_filelist_footer {
+    display: none;
+}
+
+#iddocloader .picloadcontainer {
+    margin: 10px 0px 0px 0px;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    background: white;
+    border: 0px solid #85C9CE;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    width: 300px;
+    height: 50px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#iddocloader .uploadcontainer {
+    width: 134px;
+    display: inline-block;
+}
+
+#iddocloader .plupload_droptext {
+    margin: 0px;
+    float: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0px 10px 0px;
+    background: white;
+    border: 2px dashed #85C9CE;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font: 16px 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #060C3B;
+}
+
+#iddocloader .addfilesbuttn {
+    float: none;
+    text-align: center;
+    width: 180px;
+    padding: 5px 10px 5px 10px;
+    background: white;
+    border: 1px solid #85C9CE;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font: 16px 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #060C3B;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px 0px 0px 40px;
+    cursor: pointer;
+}
+
+#iddocloader .addfilesbuttn:hover {
+    color: white;
+    background: #85C9CE;
+}
+
+#iddocloader .addfilesbuttn i {
+    padding-right: 10px;
+}
+
+#iddocloader .addfilesep {
+    margin: 0px;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+    background: white;
+    border: 0px;
+    font: 14px 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #060C3B;
+    position: relative;
+    vertical-align: top;
+    top: -5px;
+}
+
+.iddoclnk {
+    color: #060C3B;
+    padding: 0px 0px 0px 5px;
+    font-size: 16px;
+}
+
+.iddoclnk span {
+    padding: 0px 0px 0px 5px;
+    font-size: 12px;
+}
+
+.supdocs {
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+
+.lstmngres {
+    float: left;
+    text-align: center;
+    width: 40px;
+    font-size: 28px;
+}
+
+.lstmngres .fa {
+    display: none;
+}
+
+.lstmngres .fa-check-circle {
+    color: green;
+}
+
+.lstmngres .fa-times {
+    color: #dd0000;
+}
+
+#idverhld .fa-cog {
+    color: #060C3B;
+    font-size: 20px;
+    padding: 3px;
+}
+
+#alertdiv {
+    margin: 0px auto;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    float: none;
+    display: inline-block;
+    text-align: center;
+}
+
+#alertdiv .infoboxhdr {
+    width: 96%;
+    padding: 0px 2% 0px 2%;
+}
+
+#alertdiv .infoboxhdr h2 {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#alertdiv .infoboxhdr.notactv {
+    background: white;
+}
+
+#alertdiv .infoboxhdr.notactv h2 {
+    color: #060C3B;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+#alertdiv .infobox {
+    width: 100%;
+    margin: 0px auto;
+    float: none;
+    display: inline-block;
+    background: white;
+}
+
+#alertdiv .infoboxct {
+    padding: 20px 1% 0px 1%;
+    width: 98%;
+}
+
+#alertdiv .intextwrap {
+    width: 91%;
+    margin: 0px auto;
+    display: inline-block;
+    float: none;
+}
+
+#alertdiv .intextwrap.failval {
+    border-color: #EB0000;
+}
+
+#alertdiv .intextwrap .txtbx {
+    letter-spacing: 0.05em;
+    font: 16px "Roboto", "sans-serif", Arial;
+}
+
+#alertdiv .rmembrme {
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: #060C3B;
+    font: 16px "Roboto", "sans-serif", Arial;
+    display: inline-block;
+    float: none;
+}
+
+#alertdiv .rmembrme span input {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+#alertdiv .subbutwrap {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+#alertdiv .checkdiv {
+    width: 91%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.cdcheck {
+    width: 5%;
+    float: left;
+}
+
+.cdtext {
+    margin-left: 5px;
+    width: 91%;
+    float: left;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+}
+
+#alertdiv .subbutwrap {
+    border-color: #555;
+}
+
+#alertdiv .subbutwrap input {
+    color: #555;
+}
+
+#alertdiv .subbutwrap input:hover {
+    color: white;
+}
+
+.infoboxsvsch {
+    max-width: 400px;
+}
+
+.processedok {
+    padding: 20px;
+    text-align: center;
+}
+
+.processedok .fa-check-circle {
+    font-size: 30px;
+    color: green;
+    padding-right: 20px;
+}
+
+.procoktxt {
+    position: relative;
+    top: -5px;
+    font: 16px 'Roboto', sans-serif;
+    color: #060C3B;
+}
+
+.fblgcont {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px 0 0px 0;
+    text-align: center;
+}
+
+.custLoginButton {
+    display: inline-block;
+}
+
+.authProvidertxt {
+    color: #060C3B;
+    font: 16px 'Roboto';
+    vertical-align: top;
+    position: relative;
+    top: 8px;
+    padding: 0px 20px 0px 0px;
+}
+
+.authProvidertxt .fa {
+    color: #060C3B;
+    font-size: 20px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+.authProviderLogo {
+    cursor: pointer;
+    overflow: hidden;
+    background: #3B5998;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+}
+
+.authProviderLogo img {
+    border: 0px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.sellcontt {
+    width: 1024px;
+    margin: 0px auto;
+}
+
+.nwsninwelc {
+    font: 16px "Roboto", sans-serif, Arial;
+    font-weight: 300;
+    width: 100%;
+    horizontal-align: center;
+    text-align: center;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.emphp {
+    font: 20px "Roboto", sans-serif, Arial;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.fblgcont.signIn {
+}
+
+.fblgcont.signIn .custLoginButton {
+    margin: 0px 0px 10px 0px;
+    width: 270px;
+    float: left;
+    background: #4167B1;
+    border-radius: 3px;
+    height: 35px;
+    border: 1px solid #4167B1;
+    cursor: pointer;
+}
+
+.fblgcont.signIn .custLoginButton .authProviderLogo {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #4167B1;
+    border-radius: 3px 0px 0px 0px;
+    padding: 5px 7px 0px 0px;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+.fblgcont.signIn .custLoginButton .authProviderLogo .fa {
+    display: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
+
+.fblgcont.signIn .custLoginButton .authProviderLogo .fbloginLogo {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.fblgcont.signIn .custLoginButton .authProvidertxt {
+    width: 190px;
+    font: 18px Roboto, sans-serif;
+    color: white;
+    float: left;
+    padding: 0px 0px 0px 20px;
+    text-align: left;
+    font-weight: 300;
+}
+
+
+.glgcont {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px 0 0px 0;
+    text-align: center;
+}
+
+.glgcont.signIn {
+}
+
+.glgcont.signIn .custLoginButton {
+    margin: 20px 0px 20px 0px;
+    width: 270px;
+    float: left;
+    background: #4285f4;
+    border-radius: 3px;
+    height: 40px;
+    border: 1px solid #4c8bf5;
+    cursor: pointer;
+}
+
+.glgcont.signIn .custLoginButton .authProviderLogo {
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 0px;
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+}
+
+.glgcont.signIn .custLoginButton .authProviderLogo .fa {
+    display: none;
+    color: #4285f4;
+    font-size: 20px;
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
+
+.glgcont.signIn .custLoginButton .authProviderLogo .gloginLogo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.glgcont.signIn .custLoginButton .authProvidertxt {
+    width: 190px;
+    font: 18px Roboto, sans-serif;
+    color: white;
+    float: left;
+    padding: 0px 0px 0px 20px;
+    text-align: left;
+    font-weight: 300;
+}
+
+
+#loginerm {
+    font: 18px Roboto, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    float: none;
+    text-align: center;
+    display: inline-block;
+    margin: 30px 0px -30px 0px;
+    color: #EB0000;
+    line-height: 25px;
+}
+
+.sectionSepCont {
+    margin-top: 30px;
+    height: 20px;
+    width: 270px;
+    background: white;
+    float: left;
+    border-top: 1px solid #060C3B;
+    text-align: center;
+}
+
+.sectionSepWords {
+    font: 14px Roboto, sans-serif;
+    color: #060C3B;
+    position: relative;
+    top: -12px;
+    padding: 2px 15px 2px 15px;
+    background: white;
+    display: inline-block;
+}
+
+
+#logindiv .infobox .infoboxhdr h2, #regdiv .infobox .infoboxhdr h2 {
+    font: 24px Roboto, Arial;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+
+#adminmenu .tbheadntxt {
+    margin-left: 0px;
+}
+
+#tb #adminmenu.bluemen {
+    width: 63px;
+}
+
+#tb #adminmenu.bluemen.menuselected {
+    width: 63px;
+}
+
+#tb #adminmenu .ttposition {
+    left: 40px;
+}
+
+#adminmenucont .fa-plus, #adminmenucont .fa-minus {
+    display: none;
+}
+
+#tb #adminmenu .sttblink {
+    display: none;
+}
+
+#tb #adminmenu .fa-plus {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#tb #adminmenu .fa-minus {
+    display: none;
+    padding-right: 5px;
+}
+
+#tb #adminmenu .tbmenulnkcat {
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+
+#tb #adminmenu .tbmenulnkcat:last-child {
+    border-bottom: 0px;
+}
+
+
+#addsteps {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    border: 0px solid blue;
+    float: left;
+}
+
+#addsteps a {
+    text-decoration: none;
+}
+
+#addsteps a:hover .adstpcont {
+    background-color: #ccc;
+}
+
+#addsteps.adlistnohead {
+    padding-top: 80px;
+}
+
+.adstpcont {
+    padding: 10px 0 10px 0;
+    width: 72px;
+    height: 52px;
+    text-align: center;
+    background: #bbbbbb;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.arrw {
+    font-size: 20px;
+    width: 30px;
+    padding-top: 15px;
+    display: inline-block;
+    vertical-align: top;
+    color: #406A79;
+}
+
+.agntadd .arrw .fa, .propislisted .arrw .fa {
+    display: none;
+}
+
+
+.stph {
+    padding: 0px;
+    display: inline-block;
+    border: 0px solid green;
+    text-align: center;
+}
+
+.stepits {
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    color: white;
+    width: 100%;
+}
+
+.sttxt {
+    display: inline-block;
+    clear: both;
+    font: 16px "Roboto", "sans-serif", Arial;
+    color: white;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.adstpcont.stpact {
+    background: #FB958A;
+}
+
+
+.popok {
+    width: 100%;
+    text-align: center;
+}
+
+.popok span {
+    display: inline-block;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    border: 2px solid #060C3B;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.popok input {
+    font: 18px "Roboto", "Sans Serif";
+    display: inline-block;
+    background: white;
+    border: 0px;
+    width: 100px;
+    color: #060C3B;
+    padding: 5px 10px 5px 10px;
+}
+
+.popok input:hover {
+    border: 0px;
+    background: #060C3B;
+    color: white;
+    cursor: pointer;
+}
+
+
+.white-popup.thun {
+    width: 300px
+}
+
+.thun .popstatus i {
+    font-size: 30px;
+}
+
+.popcontbox {
+    width: 300px;
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.popcontbox .infobox {
+    margin-bottom: 0px;
+}
+
+.popcontbox .infobox .infoboxct {
+    margin-top: 10px;
+}
+
+.popcontbox .intextwrap {
+    margin: 5px 0px 3px 10px;
+    width: 260px;
+    horizontal-align: center;
+    height: auto;
+    padding: 1px;
+}
+
+#contactdiv .popcontbox .intextwrap {
+    margin: 10px 0px 3px 10px;
+    border-radius: 6px;
+}
+
+.white-popup .popcontbox {
+    padding-top: 10px;
+}
+
+.popcontbox .intextwrap.txtar {
+    height: 150px;
+}
+
+.popcontbox textarea {
+    height: 100%;
+    width: 96%;
+    border: 0px;
+    font: 16px 'Roboto', sans-serif;
+    padding: 5px;
+}
+
+.popcontbox .infoboxhdr h2 {
+    text-align: center;
+    padding: 0px 5px 5px 5px;
+}
+
+.popcontbox .subbutwrap {
+    margin-bottom: 0px;
+}
+
+.msslerr {
+    display: inline-block;
+    font: 12px 'Roboto', sans-serif, Arial;
+    color: #CC0000;
+    position: relative;
+    top: 0px;
+    left: 10px;
+}
+
+.listingcontact .msslerr {
+    top: -1px;
+}
+
+.listingcontact {
+    text-align: left;
+}
+
+#msgerm {
+    font-size: 16px;
+    width: 100%;
+    float: none;
+    display: inline-block;
+    margin: 10px 0px 5px 10px;
+    color: #EB0000;
+    line-height: 25px;
+}
+
+#pichoder {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.messdone {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: -10px 0px 20px 0px;;
+}
+
+.messdone span {
+    font: 18px 'Roboto', sans-serif, Arial;
+    color: #060C3B;
+}
+
+.white-popup .messdone i {
+    color: green;
+    padding-right: 20px;
+    font-size: 35px;
+    position: relative;
+    top: 7px;
+}
+
+#popspin {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 120px;
+    background: url('/images_static/Ripple.svg');
+    background-size: 120px 120px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#popstatus {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    font: 26px 'Roboto', sans-serif, Arial;
+    color: white;
+    font-weight: 400;
+}
+
+#popstatus .mfp-close, #popspin .mfp-close {
+    display: none;
+}
+
+
+.popcontbox h2.byermesshd, .popcontbox div.byermesshd {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    font-size: 22px;
+    padding-bottom: 0px;
+    padding-top: 7px;
+    text-align: left;
+}
+
+.popcontbox div.byermesshd {
+    color: #060C3B;
+    width: 96%;
+    padding: 7px 2% 0px 2%;
+}
+
+.popcontbox h2.byermesshd .innhead, .popcontbox h2.byermesshd .innhead {
+    margin: 0px 0px 10px 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.popcontbox .phbox {
+    float: left;
+    border-bottom: 1px solid #85C9CE;
+    background: white;
+    font: 16px Roboto, sans-serif;
+    color: #406A79;
+    padding: 10px 2% 15px 2%;
+    width: 96%;
+    font-weight: 300;
+}
+
+.phbox .phholder {
+    padding-left: 10px;
+    width: 270px;
+}
+
+.contactactions {
+    display: none;
+}
+
+.phbox .phholder p {
+    margin: 0px 0px 5px 0px;
+    text-align: left;
+}
+
+.phbox .phholder p.callpreamble {
+    display: none;
+    color: #060C3B;
+    font: 18px Roboto, sans-serif;
+}
+
+.popcontbox .phbox a {
+    color: #406A79;
+    text-decoration: none;
+}
+
+.popcontbox .phbox .fa {
+    width: 20px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.phbox .phholder.agent_dets {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.phbox .phholder.agent_dets .agent_dets_p {
+    padding: 10px 2% 10px 2%;
+    color: #060C3B;
+}
+
+.phbox .phholder.agent_dets a {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.phbox .phholder.agent_dets .fa {
+    font-size: 14px;
+    padding-right: 0px;
+}
+
+
+.select2-selection__arrow .fa-angle-down {
+    font-size: 18px;
+    color: #060C3B;
+    margin-top: 5px;
+}
+
+#contactusholder {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 9999;
+}
+
+#contactusholder.opencontform {
+}
+
+#contactdets p {
+    margin: 17px 0px 10px 0px;
+}
+
+#contactdets {
+    display: none;
+}
+
+#opencont {
+    cursor: pointer;
+    background: #060C3B;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+    border: 2px solid white;
+    border-bottom: 0px;
+}
+
+#opencont a {
+    font: 16px Roboto, sans-serif;
+    color: #efefef;
+    padding: 0px 5px 10px 5px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#opencont a.phonecontft {
+    font: 14px Roboto, sans-serif;
+}
+
+#opencont a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#opencont .fa {
+    padding: 0px 5px 0px 0px;
+}
+
+#footconttext {
+    margin: 0px;
+    padding: 5px 0px 7px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.opencontform #footconttext .fa {
+    font-size: 18px;
+}
+
+#footconttext .fa {
+    font-size: 16px;
+    left: 10px;
+    top: -2px;
+    position: relative;
+}
+
+#contactuslinks {
+    padding: 5px 0px 10px 5px;
+    margin-top: -10px;
+    display: none;
+}
+
+#contactuslinks .fa {
+    font-size: 20px;
+}
+
+div.pill {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    background: #748d83;
+    overflow: hidden;
+}
+
+div.pill > div {
+    overflow: auto;
+}
+
+.opencontform #contactpill {
+    width: 300px;
+    box-shadow: 0px -12px 16px -4px rgba(16, 24, 40, 0.3), 0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+}
+
+.opencontform #footconttext .fa-chevron-up {
+    display: none;
+}
+
+#contactpill {
+    padding: 0;
+    width: 180px;
+    background: none;
+}
+
+#contactpill > div:first-child {
+    font-size: 20px;
+}
+
+#contactpill > div:last-child {
+    font-size: 15px;
+    background: white;
+}
+
+#contactpill form {
+    padding: 0 20px 0 20px;
+}
+
+#contactpill form > input[type=text] {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactpill form > button {
+    background: #3e4b46;
+}
+
+#contactpill span.dark {
+    color: #3e4b46;
+}
+
+#contactpill span.large {
+    font-size: 20px;
+}
+
+.contformfldwrap {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #B2AFB1;
+    background: white;
+    padding: 2px 5px 4px 5px;
+    height: 24px;
+    display: inline-block;
+    margin-top: 7px;
+    width: 80%;
+}
+
+.contformfldwrap.txtar {
+    HEIGHT: 50PX;
+}
+
+.contformfldwrap.msserrft {
+    border: 1px solid #EB0000;
+    background: #FFE5E5;
+}
+
+.contformfldwrap input {
+    display: inline-block;
+    background: transparent;
+    height: 25px;
+    font: 14px "Roboto", sans-serif;
+    border: 0px solid white;
+    width: 97%;
+    color: #555;
+}
+
+.contformfldwrap textarea {
+    display: inline-block;
+    background: transparent;
+    height: 50px;
+    font: 14px "Roboto", sans-serif;
+    border: 0px solid white;
+    width: 97%;
+    color: #555;
+}
+
+.contactusbutwrap {
+    padding: 0px;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid #060C3B;
+    background: #060C3B;
+    border-radius: 8px;
+}
+
+.contactusbutwrap input {
+    background: none;
+    font: 16px "Roboto", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    border: 0px;
+    color: white;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+}
+
+#messformcont .messdone {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    margin: 10px 0px 20px 0px;
+    background: white;
+}
+
+#messformcont .messdone span {
+    font: 18px 'Roboto', sans-serif, Arial;
+    color: #060C3B;
+}
+
+#messformcont .messdone i {
+    color: green;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+#messformcont .popstatus {
+    display: inline-block;
+    background: white;
+    padding: 20px 0px 20px 0px;
+}
+
+
+.OKSelect {
+    background: green;
+    color: white;
+}
+
+.OKSelect .contdet {
+    color: white;
+}
+
+.FAILSelect {
+    background: #EB0000;
+    color: white;
+}
+
+.FAILSelect .contdet {
+    color: white;
+}
+
+#navdiv {
+    display: inline-block;
+    border-top: 1px solid #060C3B;
+    padding: 20px 0px 30px 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#navdiv .selwrap {
+    top: 12px;
+    margin: 0px 10px 0px 20px;
+}
+
+.white-popup.headedalert {
+    padding: 2px 0px 0px 0px;
+}
+
+.messgecont {
+    width: 100%;
+    float: left;
+    border: 1px solid #ccc;
+    margin: 0px 0px 10px 0px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.messgemark {
+    width: 92%;
+    float: left;
+    margin: 0px 4% 0px 4%;
+    height: 5px;
+    width: 80px;
+    background: #060C3B;
+}
+
+.messgehdn {
+    width: 92%;
+    float: left;
+    margin: 15px 4% 0px 4%;
+    font: 18px Roboto, sans-serif;
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.messgepar {
+    width: 84%;
+    float: left;
+    margin: 0px 4% 20px 4%;
+    font: 16px Roboto, sans-serif;
+    color: #777;
+}
+
+.headedalert .popok input {
+    font: 18px Roboto, "Sans Serif";
+    display: inline-block;
+    background: #85C9CE;
+    border: 0px;
+    width: 100px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+.headedalert .popok input:hover {
+    border: 0px;
+    background: white;
+    color: #060C3B;
+    cursor: pointer;
+}
+
+.messgepar p {
+    color: #060C3B;
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+}
+
+.messgepar p i {
+    color: black;
+    font-size: 16px;
+    padding: 0px 2px 0px 2px;
+}
+
+#fued, #downallpics {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    text-align: Center;
+    line-height: 40px;
+}
+
+#fued a {
+    background-color: #2176BB;
+    margin: 0px 5px 10px 5px;
+    color: white;
+    font: 20px Roboto, Arial;
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+    border-radius: 3px;
+}
+
+
+.sndrembutn {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.sndrembutn input {
+    cursor: pointer;
+    font: 18px Roboto;
+    font-weight: 400;
+    color: white;
+    background: #85C9CE;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #85C9CE;
+}
+
+.sndrembutnres {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+/**Responsive Settings ***/
+
+@media only screen and (max-width: 1250px) {
+    #respwrap #tbselllink {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #respwrap #tbselllink {
+        margin-left: 4%;
+    }
+
+    #respwrap #tbsellnow {
+        padding-right: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) {
+    #respwrap #contentholder {
+        width: 96%;
+        padding: 2%;
+    }
+
+    .sellcontt {
+        width: 100%;
+    }
+
+    #respwrap #tbselllink {
+        margin-left: 6%;
+    }
+
+    #respwrap #tbsearchnow {
+        display: none;
+    }
+
+    #respwrap #tblinksep {
+        display: none;
+    }
+
+    #respwrap #tbselllink {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    #respwrap #tbselllink {
+        margin-left: 1%;
+    }
+
+    #respwrap #tbsearchnow a {
+        letter-spacing: 0px;
+    }
+
+    #respwrap #tbsearchnow {
+        width: 136px;
+    }
+
+}
+
+@media only screen and (max-width: 799px) {
+    #respwrap .pghead h1 {
+        font-size: 34px;
+        width: 96%;
+        padding: 20px 2% 20px 2%;
+        margin: 20px 0px 10px 0px;
+    }
+
+    #tb .tbmenitem.menuless {
+        padding-right: 15px;
+    }
+
+
+    #footconttext {
+        margin: 0px;
+        padding: 5px 0px 5px 0px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    #footconttext .fa {
+        font-size: 14px;
+        left: 7px;
+        top: -2px;
+    }
+
+    #contactpill {
+        padding: 0;
+        width: 130px;
+        background: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #respwrap .pghead h1 {
+        font-size: 30px;
+        width: 96%;
+        padding: 20px 2% 20px 2%;
+        margin: 10px 0px 5px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 690px) {
+    #respwrap .pghead h1 {
+        font-size: 26px;
+    }
+
+    .respmenopt {
+        display: none;
+    }
+
+    #respwrap #adminmenu {
+        display: none;
+    }
+
+    #respwrap #tbsellnow {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 530px) {
+    #tb {
+        text-align: center;
+    }
+
+    #tb #tbsellprop {
+        display: none;
+    }
+
+    #tb #tbbuyprop {
+        display: none;
+    }
+
+    #tb #tbsignup {
+        display: none;
+    }
+
+    #tb #tbburgermenu {
+        display: inline-block;
+    }
+
+    #tb #tblogo {
+        float: none;
+        display: inline-block;
+    }
+
+    #tb #tblogohld {
+        float: none;
+        padding: 5px 10px 5px 10px;
+    }
+
+    #burgerbuying, #burgerselling {
+        display: inline-block;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    #respwrap .pghead h1 {
+        font-size: 22px;
+    }
+
+    #tb #tblogo {
+        padding-left: 5px;
+        margin-left: -10px;
+    }
+
+    #respwrap #contentholder {
+        width: 98%;
+        padding: 1%;
+    }
+
+    #respwrap .adstpcont {
+        width: 62px;
+    }
+
+    .agntadd .arrw {
+        width: 9px;
+    }
+
+    .opencontform#contactusholder {
+        right: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    #tb #tbsellprop {
+        display: none;
+    }
+
+    #tb #tbbuyprop {
+        display: none;
+    }
+
+    .mfp-content .white-popup, .white-popup {
+        padding: 30px 10px 20px 10px;
+    }
+
+    #tb #tbsignup {
+        padding-right: 5px;
+        margin-top: 2px;
+    }
+
+    #tb #tblogin {
+        padding-right: 10px;
+        margin-top: 2px;
+    }
+
+
+}
+
+@media only screen and (max-width: 360px) {
+    #moblogo {
+        display: inline;
+        padding-left: 15px;
+    }
+
+    #stdlogo {
+        display: none;
+    }
+}
+
+
+
+
+
+

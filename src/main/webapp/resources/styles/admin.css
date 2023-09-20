@@ -1,0 +1,757 @@
+@CHARSET "ISO-8859-1";
+
+@media only screen and (max-width: 650px) {
+	#respwrap #addpropertyag{width:96%;}
+	#respwrap #address{width:90%;margin-bottom:10px;}
+	
+	
+
+}
+
+
+
+.adminlhd{ float:left;width:500px;height:300px;padding-top:20px;}
+#floating-panel {width:100%;text-align:center;float:left; margin-bottom:20px;background-color: #fff;padding:0px;border: 0px solid #999; font:16px Roboto, sans-serif;font-weight:400;}
+.edlistconthld {width:100%;text-align:center;float:left; margin-bottom:20px;background-color: #fff;padding:0px;border: 0px solid #999; font:16px Roboto, sans-serif;font-weight:400;}
+#sndactvbutnres i{font-size:20px;color:#060C3B;padding:5px;}
+
+.adminput{width:500px;border:1px solid #85C9CE;border-radius:3px;font:16px 'Roboto',sans-serif;color:#060C3B;font-weight:300;padding:2px 5px 5px 5px;}
+input.adminputbut{cursor:pointer;border:1px solid #FB958A;border-radius:3px;font:16px 'Roboto',sans-serif; background:#FB958A;color:white;font-weight:400;padding:5px 10px 5px 10px;}
+.adminputbutsmall{cursor:pointer;border:1px solid #FB958A;border-radius:2px;font:14px 'Roboto',sans-serif; background:#FB958A;color:white;font-weight:400;padding:2px 5px 2px 5px;}
+.adminputbutsmall:hover{border:1px solid #FB958A;}
+#lookupownrs{border:1px solid #555555;background:#555555;float:right;}
+#iddecreason{display:none;width:98%;height:200px;font:14px  'Roboto',sans-serif;;padding:5px 1% 5px 1%;float:left;margin:10px 0px 10px 0px;}
+.edadmbidbtnhld{width:100%;text-align:center;}
+.aiddecbutt{display:inline-block;cursor:pointer;border:1px solid white;border-radius:3px;font:16px 'Roboto',sans-serif; background:#85C9CE;color:white;font-weight:400;padding:5px 10px 5px 10px;}
+#idverproc{display:block;margin:10px 0px 0px 0px;text-align:left;}
+#idverres{width:98%;padding:10px 0px 10px 2%;display:block;font:16px 'Roboto',sans-serif;}
+#idverres .fa{display:none;}
+
+.catcont,.mstchgdiv{display:inline-block;width:96%;padding:0px 10px 10px 10px;margin:0px 0px 20px 0px;font:16px 16px Roboto, sans-serif;border-bottom:1px solid #c0c0c0;}
+.catcont h2{color:#060C3B;float:left;width:100%;margin:0px;padding:20px 0px 10px 0px;font:24px Roboto,Arial;}
+.catcont a{text-decoration:underline;color:#060C3B;}
+.catname{font-size:18px;font-weight:400;color:black;}
+.catval{font-family:Roboto,sans-serif;font-size:18px;font-weight:300;color:#060C3B;padding-left:10px;}
+.adminno{background:#85C9CE;font:16px 'Roboto', sans-serif;line-height:23px;color:white;margin:0px 10px 0px 0px;width:23px;height:23px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;display:inline-block;text-align:center;position:relative;top:-3px;}
+.subacthld{float:left;background:#efefef;margin-left:20px;}
+.adminnosmall{background:#555555;font:18px 'Roboto', sans-serif;line-height:26px;color:white;margin:0px 10px 0px 0px;width:26px;height:26px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;display:inline-block;text-align:center;position:relative;top:0px;}
+.fivehun{float:left;width:410px;margin:0px 0px 30px 10px;}
+.adinstr{width:380px;display:inline-block;float:right;}
+#subselect{width:270px;}
+
+#photover .popup-gallery{text-align:center;}
+#photover .subacthld,#pricever  .subacthld,.adminFieldEdit .subacthld{float:none;display:inline-block;width:100%;margin:0px;}
+.adminedlink{font:16px 'Roboto',sans-serif;}
+#photover img{max-height:210px;max-width:210px;padding:10px;}
+#piccnt{margin:10px;padding:0px 0px 20px 0px;font:18px 'Roboto',sans-serif;}
+#Verlistings{text-align:center;}
+#Verlistings .srprevhld{border-radius:5px;width:250px;display:inline-block;padding:10px 10px 0px 10px;margin:20px 0px 0px 20px;background:#efefef;}
+#Verlistings .edactlnk{display:inline;padding:0px 10px 0px 10px;font:14px Roboto'', sans-serif;color:white;}
+#Verlistings .edlnkcont{border-radius:0px 0px 5px 5px;margin-top:10px;display:inline-block;width:270px;padding:10px 0px 10px 0px;position:relative;left:-10px;background:black;}
+.edlstref{display:inline-block;width:100%;text-align:center;font-size:16px;}
+.edlstref span{font-size:14px;}
+#OfferList .edlstref span{font-size:20px;}
+
+
+
+
+#clientpic{background:white;width:80px;height:80px;position:relative;border:1px solid #c0c0c0;display:inline-block;overflow:hidden;margin-right:3px;}
+#clientpic i{position:relative;top:23px;left:0px;display:inline-block;font-size:30px;color:#060C3B;}
+#clientpic img{padding:0px;border:0px;width:100%;height:100%;display:inline-block;}
+
+.idverhld{margin:20px 10px 0px 10px;display:inline-block;height:110px;width:280px;padding:10px;background:#efefef;color:#060C3B;border-radius:5px;}
+.idverdata{width:170px;display:inline-block;overflow:hidden;}
+.idverinf{display:inline-block;width:100%;}
+.idverinf p{margin:0px;padding:10px 0px 0px 0px;font-size:14px;}
+
+#priceworking, #structaddrworking, .adminFieldWorking{font-size:28px;width:50px;}
+#priceworking .fa,  #structaddrworking .fa, .adminFieldWorking .fa{display:none;position:relative;top:5px;}
+#priceworking .fa-check-circle,  #structaddrworking .fa-check-circle, .adminFieldWorking .fa-check-circle{color:green;}
+#priceworking .fa-times,  #structaddrworking .fa-times,  .adminFieldWorking  .fa-times{color:#dd0000;}
+
+.strucaddr{float:left;padding-bottom:20px;width:100%;}
+.strucaddr span{float:left;text-align:right;width:130px;padding-right:5px;}
+.strucaddr span .numb{width:100px;}
+
+#strcuaddrver{border-bottom:1px solid #c0c0c0;padding-bottom:20px;margin-bottom:20px;display:inline-block;}
+#sellerstat{padding-left:50px;}
+#liststat{float:left;font:20px "Roboto", sans-serif;padding:30px 0px 10px 10px;color:#060C3B;}
+#liststat span{color:black;font-weight:400;}
+#actlisthold{display:inline-block;width:100%;text-align:center;padding:30px 0px 50px 0px;}
+#actlisthold .adminputbut{padding:5px 20px 7px 20px;font-size:30px;border:2px solid #060C3B;color:white}
+
+
+
+.crmblock{text-align:left;display:inline-block;width:300px;padding:10px 20px 10px 10px;vertical-align:top;horizontal-align:center;background:white;}
+.crmblock .infobox{width:100%;margin:0px auto;float:none;}
+.crmblock .infoboxhdr{text-align:center;}
+.crmblock  .AdInputInfo{font-size:14px;}
+.crmblock .listinlabel{padding-left:0px;}
+.crmblock  .formfldwrap{width:100%;}
+.crmblock  .intextwrap{width:230px;margin:0px 5px 10px 5px;}
+.crmblock  .intextwrap input:text{font-weight:400;color:#060C3B;}
+.crmblock .infobox .infoboxct .prochg{line-height:14px;font-size:14px;margin:0px;color:#060C3B;text-decoration:underline;cursor:pointer;}
+#prospectsel{width:300px;text-align:left;}
+.crmblock .infopar{display:inline-block;width:100%;padding:0px 0px 10px 0px;margin:0px;font:18px 'Roboto',sans-serif;color:#060C3B;text-align:center;}
+.crmblock .select2-container--default .select2-selection--single{
+
+    border: 1px solid #999;
+    text-shadow: #fff 1px 1px 0;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    padding-bottom:10px; 
+    height:32px;
+
+}
+.crmblock .select2-container--default .select2-selection--single:hover{
+	    webkit-box-shadow: inset 0 1px 1px #efefef,0 0 3px #ddd;
+    -moz-box-shadow: inset 0 1px 1px #efefef,0 0 3px #ddd;
+    box-shadow: inset 0 1px 1px #efefef,0 0 3px #ddd;
+}
+.crmblock .addprospectwrap{text-align:center;}
+
+.nauthor{font-weight:300;width:100%;display:block; margin:0px auto;padding:100px 2% 100px 2%;font:16px 'Roboto', sans-serif;text-align:center;color:#060C3B;}
+.nauthor a{color:#060C3B;}
+.crmblocksel{font-size:16px;}
+.InfoList{width:100%;padding:10px 0px 10px 0px;text-align:left;display:inline-block;font-weight:400;color:#060C3B;}
+.infolistholder{float:left;width:96%;padding:10px 0px 10px 0px;margin:0px 0px 10px 0px;border-bottom:1px solid #c0c0c0;}
+.infolistitm{width:90%;padding:0px 0px 0px 2%;text-align:left;float:left;white-space: nowrap;overflow:hidden !important;text-overflow: ellipsis;}
+.infolistitmact{float:right;cursor:pointer;}
+.infolistitmact .fa{font-size:20px;color:#EB0000;}
+#prosaddbut{margin-top:10px;margin-bottom:20px;clear:both;}
+#showaddnewusr{text-decoration:underline;cursor:pointer;}
+#addnewproswrap{border:1px solid #85C9CE;border-radius:3px;}
+.InfoList h3{font:18px 'Roboto', sans-serif;color:#060C3B;margin:10px 0px 0px 0px;}
+#addnewproswrap .intextwrap{background:white;}
+#newprosdets{display:none;}
+#newprosdetsproc,#addrsselsproc,#getownerthinking, #addoppworking{display:none;font-size:26px;color:#060C3B;text-align:center;width:100%;margin-top:10px;}
+#addrsselsproc .fa{margin-top:30px;}
+#newprosdets h3, #propfilterform h3{width:100%;font-size:20px;color:#060C3B;font-weight:400;margin-bottom:10px;}
+
+
+.formerr{display:inline-block;padding:2px 0px 8px 0px;color:#EB0000;font-size:14px; }
+
+#addpropertyag{width:650px;}
+.crmblock .infobox .infoboxhdr h2{padding:6px;}
+
+
+#Ownerfind{padding-bottom:10px;margin-bottom:0px;width:100%;}
+#Ownerfind h3{width:100%;vertical-align:middle;display:inline-block;padding-bottom:23px;}
+#ownerinfo{display:none;}
+#ownerinfo p{color:#060C3B;text-transform: uppercase; margin:0px;padding:10px 0px 0px 0px;}
+#newprosdets .formerr{text-align:left;font:12px Arial,'Roboto';float:left;margin:-15px 5px 5px 0px;padding-left:35px;width:230px;}
+#addopbuttn{width:100%;padding:5px 10px 5px 10px;font-size:30px;margin:20px 0px 100px 0px;font-family:Roboto,sans-serif;font-weight:300;border:1px solid #85C9CE;background:#85C9CE;}
+
+#opaddedok{width:100%; text-align:center;padding-bottom:100px;display:none;}
+.addedokhead{font:26px Roboto, sans-serif;color:#060C3B;padding: 40px 2% 0px 2%;display:inline-block;width:100%;}
+.addedokhead .fa {
+	padding-right: 10px;
+	color:green;
+}
+.addedokhead a{color:#060C3B;padding:0px 20px 20px 20px;}
+.addedokhead a:hover{color:#555555;}
+
+.strucaddr span.addresphld{margin-left:20px;display:inline-block;width:auto;}
+#mappo.adminlhd{padding:0px 0px 20px 0px;}
+.fivehun .adinstr{width:350px;}
+#minprichld span{}
+.settpricehld{display:inline-block;margin:0px 10px 20px 10px;}
+
+.listadminactdesc{color:#060C3B;font-size:20px;vertical-align:top;padding-top:10px;display:inline-block;}
+
+
+.edlistconthld .municipalentry{display:inline-block;float:none;width:280px;margin:10px;border:0px solid blue;vertical-align:top;}
+
+
+.reptable {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin:0;
+  padding:0;
+  width: 100%;
+  font:12px Roboto, sans-serif;
+}
+.reptable tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.reptable th, .reptable td {
+  padding: 10px;
+  text-align: center;
+}
+.reptable td a{text-decoration:underline;color:#3F4C45;}
+
+.reptable th {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.reptable tr:nth-child(even) td { background: #F1F1F1; }   
+.reptable tr:nth-child(odd) td { background: #FEFEFE; }  
+.reptable tr:hover td{ background: #666; color: #FFF; }
+.reptable tr:hover td a{color:white;}
+
+.leadlisthlder .reptable th{color:white;background:#555;}
+	
+#listconthld{display:inline-block;width:100%;margin-top:50px;}
+#listconthld.leadlisthlder{background:white;}
+#listconthld .pghead h1{margin:0px;}
+.leadlisthlder #navdiv{border:0px;margin-top:10px;padding:20px 0px 40px 0px;}
+
+#filterholder{float:left;width:100%;text-align:center;border-bottom:0px solid #85C9CE;background:white;padding:10px 0px 10px 0px;margin:0px 0px 0px 0px;}
+#filterholder .selwrap{height:24px;border:1px solid #060C3B;;border-radius:3px;top:0px;margin-top:10px;}
+#filterholder .selwrap select{color:#060C3B;font-weight:400;font:14px Roboto,Roboto,sans-serif;}
+#filterholder .selwrap input::placeholder{font-weight:400;font:14px Roboto,Roboto,sans-serif;}
+#filterholder .selwrap::before{color:#060C3B;;top:5px;}
+#filterholder .intextwrap{height:26px;border:1px solid #060C3B;;border-radius:3px;top:0px;margin-top:10px;}
+#filterholder .intextwrap input{color:#060C3B;font-weight:400;}
+#filterholder .intextwrap input::placeholder {font:14px Roboto, sans-serif;}
+
+#filterholder.crmfilter{padding:10px 0px 10px 0px;}
+#filterholder.crmfilter .selwrap{border:1px solid #999;border-radius:2px;}
+#filterholder.crmfilter .selwrap select{color:#060C3B;font:16px Roboto;font-weight:400;}
+#filterholder.crmfilter .selwrap option{color:#060C3B;font:16px Roboto;font-weight:400;}
+#filterholder.crmfilter .selwrap::before{color:#060C3B;;top:5px;}
+#filterholder.crmfilter .intextwrap{border:1px solid #999;border-radius:2px;}
+#filterholder.crmfilter .intextwrap input{font:16px Roboto;font-weight:400;}
+#filterholder.crmfilter .intextwrap input::placeholder {font:14px Roboto;font-weight:300;}
+#filterholder.crmfilter .repbutwrap{box-shadow:none;background:#3F4C45;}
+#filterholder.crmfilter .repbutwrap input[type="submit"]{text-transform:none;font:16px Roboto;font-weight:400;border-radius:2px;height:28px;}
+
+
+#resultsheading{font:14px Roboto, sans-serif;font-weight:500; text-transform:uppercase;float:left;width:100%;text-align:center;padding:10px 0px 10px 0px;margin-bottom:30px;}
+#resultsheading .recscount{display:inline-block;padding:10px;}
+#resultsheading .downlnk{display:inline-block;padding:10px;color:#060C3B;}
+#resultsheading .downlnk a{color:#060C3B;}
+
+
+.repbutwrap{vertical-align:top;padding:0px;display:inline-block;margin:11px 0px 0px 0px;border:0px solid #060C3B;border-radius:3px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);}
+.repbutwrap:hover{border:1px solid #3F4C45;}
+.repbutwrap input[type="submit"], .repbutwrap input[type="button"]{height:26px;background:#060C3B;border:1px solid #060C3B;}
+.repbutwrap input, .crmbutwrap a{	font:16px Roboto, sans-serif;	display:inline-block;	background:#060C3B;;	border:0px;	color:white;	padding:2px 12px 2px 12px;font-weight:400;text-transform:uppercase;}
+.repbutwrap input:hover{	border:0px;	background:#060C3B;	color:white;	cursor:pointer;}
+.repnauth{float:left;width:100%;padding:40px;text-align:center;font:18px Roboto, sans-serif;font-weight:400;}
+
+#resultsholder{text-align:center;display:inline-block;width:100%;}
+#leadlistholder{text-align:center;display:inline-block;width:100%;max-width:1260px;}
+.leadholder{margin-bottom:20px;display:inline-block;width:100%;padding:0px 0px 0px 0px;border:0px;}
+
+
+.leadsummary{box-shadow: 2px 2px 3px #999;background:#f9f9f9;display:inline-block;vertical-align:top;width:615px;margin:0px 5px 0px 5px;padding:0px 0px 0px 0px;text-align:left;}
+.saleslead .leadsummary{background:#fef4eb;;}
+.buylead .leadsummary{background:#f5fffa;}
+.prospectlead .leadsummary{background:LightYellow;}
+
+
+.active .leadsummary{background:white;border:1px solid #555;box-shadow: -2px 2px 2px #ccc;}
+.leaddetail{display:inline-block;vertical-align:top;width:615px;margin:0px 5px 0px 5px;}
+.detailpostn{position:absolute;}
+.detailscontent{display:none;vertical-align:top;box-shadow: 2px 2px 3px #999;}
+.showdets{display:inline-block;text-decoration:underline;cursor:pointer;}
+.active .leadsummary{position:relative;width:625px;margin:0px;left:4px;border-right:0px;z-index:500;}
+.active .detailscontent{position:relative;left:-6px;width:620px;display:inline-block;margin:0px;}
+.saleslead.active .detailscontent, .prospectlead.active .detailscontent{border:1px solid #555;background:white;padding-bottom:10px;}
+.buylead.active .detailscontent, .unknownlead.active .detailscontent {border:1px solid #555;background:white;}
+#leadlistholder #navdiv{border:0px; margin-bottom:50px;}
+
+.crmlinksbar{float:left;width:96%;text-align:center;padding:20px 2% 0px 2%;background:white;border-bottom:1px solid #406A79;}
+.crmlinksbar .crmlinktab{float:none;display:inline-block;position:relative;margin:0px 10px 0px 10px;border-radius:2px 2px 0px 0px;padding:5px 10px 5px 10px;border:1px solid #999;border-bottom:0px;top:1px;}
+.crmlinksbar .crmlinktab.acttab{border:1px solid #060C3B;border-bottom:0px;background:white;padding:6px 10px 8px 10px;top:5px;}
+.crmlinksbar .crmlinktab a{float:left;text-decoration:none;font:16px Roboto;font-weight:300;color:#060C3B;}
+.crmlinksbar .crmlinktab.acttab a{font-weight:400;}
+
+
+.leadsummline{float:left;width:100%;text-align:left;border0px;}
+.leadsummline:first-child{border-bottom:0px solid #efefef;}
+.leadsummline div{float:left;padding:2px 5px 2px 5px;height:18px;font:14px Roboto, sans-serif;font-weight:400;white-space: nowrap;text-overflow: ellipsis;overflow:hidden;}
+.leadsummline .leadtype{padding-top:7px;width:52px;text-align:left;font:14px Roboto, sans-serif;font-weight:500;text-transform:uppercase;}
+.leadsummline.expand{cursor:pointer;}
+
+.buyback{color:#060C3B;}
+.sellback{color:#FB958A;}
+
+.leadsummline .leadstatus{padding-bottom:1px;width:160px;text-align:center;font:14px Roboto, sans-serif;font-weight:400;border-radius:3px;}
+.leadstatus .fa{padding-right:5px;}
+.leadstatus.statusred .fa{color:#cc0000;}
+.leadstatus.statusred{BACKGROUND:#FFE5E5;border:1px solid #cc0000;margin-top:4px;margin-bottom:4px;}
+.leadstatus.statusgreen{background:#ebfff4;border:1px solid #85C9CE;border-radius:0px;margin-top:4px;margin-bottom:4px;}
+.leadstatus.statusyellow{color:#060C3B;background:yellow;margin-top:3px;margin-bottom:3px;}
+.leadstatus.statusgrey{BACKGROUND:#c0c0c0;border:1px solid #555;margin-top:4px;margin-bottom:4px;color:white;}
+.leadstatus.statuswon{BACKGROUND:#eee;border:1px solid #555;margin-top:4px;margin-bottom:4px;color:green;}
+.leadstatus.statuslost{BACKGROUND:#eee;border:1px solid #555;margin-top:4px;margin-bottom:4px;color:#cc0000;}
+.leadsummline .leadcontact{width:190px;padding-top:7px;padding-left:10px;font:14px Roboto,sans-serif;white-space: nowrap;text-overflow: ellipsis;overflow:hidden;}
+.leadsummline div.leadaddress{color:#555; font:14px Roboto,sans-serif;font-weight:300;padding:10px 1% 10px 1%;width:98%;white-space: nowrap;text-overflow: ellipsis;overflow:hidden;}
+.leapersonname{font-weight:400;color:black;}
+.leadsummline .leadlistingstatus{vertical-align:top;padding:0px 5px 5px 5px;font:14px Roboto, sans-serif;font-weight:400;float:none;display:inline-block;color:#060C3B;}
+.leadsummline .leadctd{padding:10px 0px 0px 0px;height:16px;text-align:center;width:165px;color:#555;border-left:0px solid #efefef;font:10px Roboto, sans-serif;text-transform:uppercase;font-weight:500;}
+.leadsummline .leadctd a{color:#555;text-decoration:underline;}
+.leadsummline.leadlinks{border-top:0px solid #efefef;padding-bottom:3px;}
+.leadsummline .linkstitle{text-align:left;font:14px Roboto, sans-serif;font-weight:400;width:180px;padding-top:5px;padding-bottom:5px;padding-right:0px;}
+.linkstitle.addlist{position:relative;top:-3px;left:3px;padding:5px 5px 5px 5px;}
+.linkstitle.addlist a{background:#060C3B;}
+.linkstitle a{vertical-align:top;text-decoration:none;color:white;font:14px Roboto, sans-serif;font-weight:400;background:#555;border-radius:3px;padding:3px 10px 3px 10px;}
+.leadsummline .linkscont{padding-left:0px;padding-top:0px;margin-top:-8px;height:auto;line-height:20px;}
+.linkscont a{color:#060C3B;font:10px Roboto,Roboto,sans-serif;text-decoration:none;text-transform:uppercase;font-weight:400;}
+.linkscont a:hover{text-decoration:underline;}
+.linkscont .fa{color:#555;padding-left:10px;font-size:12px;}
+.linkscont .fa.fa-desktop{position:relative;top:1px;}
+
+.spinnr{float:left;width:100%;padding:50px 0px 50px 0px;text-align:center;}
+.spinnr .fa{font-size:18px;color:#060C3B;}
+.saleslead .spinnr .fa, .prospectlead .spinnr .fa{font-size:18px;color:#FB958A;}
+
+.leaddetailhead{float:left;width:100%;border:0px solid blue;}
+
+.leadagents{float:left;width:410px;padding:4px 0px 2px 10px;}
+.leadparty{float:left;text-align:left;width:130px; padding:3px 0px 3px 5px;border-right:0px solid #efefef;color:#060C3B;font:10px Roboto, sans-serif;font-weight:500;}
+.leadparty:last-child{border-right:0px;}
+.partytype{display:inline-block;vertical-align:top;margin-left:7px;margin-top:5px;text-align:left;}
+.partytype.actdate{margin-top:2px;}
+
+.leaddetailactions{float:right;width:90px;height:38px;padding:8px 0px 6px 0px;text-align:right;}
+.leaddetailactions span{color:#060C3B;padding:3px 15px 0px 5px;font-size:20px;float:right;cursor:pointer;}
+.leaddetailactions span:hover{color:#999;}
+
+.editleadbutton{float:right;width:100px;height:38px;padding:8px 0px 6px 0px;text-align:right;}
+.editleadbutton.alive{background:#f0f0f0;}
+.compresslink{display:none;cursor:pointer;position:relative;top:5px;}
+
+.editleadbutton.alive .editleadlink{display:none;}
+.editleadbutton.alive .compresslink{display:inline-block;}
+
+.editleadlink:hover{background:#060C3B;}
+.editleadbutton.alive .editleadlink{background:#555;color:white;}
+.editleadlink{color:white;cursor:pointer;display:inline-block;background:#060C3B;border-radius:3px;font:16px Roboto, sans-serif;font-weight:400;border:0px solid #555;padding:6px 12px 5px 8px;}
+.editleadlink span{display:inline-block;height:18px;width:18px;text-align:center;border:0px solid #555;font-size:14px;border-radius:50%;margin-right:2px;}
+.editleadlink span .fa{position:relative;top:-1px;}
+.editleadlink.alive span{border-color:white;}
+.editleaddetails{display:none;float:left;width:100%;margin-top:0px;padding:20px 0% 10px 0;border-bottom:1px solid #999;background:#f0f0f0;}
+.editleaddetails .intextwrap.noleadedit{text-align:center;padding:0px;background:#f0f0f0}
+.editleaddetails .intextwrap.noleadedit span{display:inline-block;margin-left:5px;margin-top:5px;width:70%;text-align:left;height:24px;vertical-align:top;}
+.editleaddetails .intextwrap {margin:2px 2px 2px 2px;padding:0px;background:white;overflow:hidden;}
+ .editleaddetails .intextwrap.withsel{margin-bottom:0px;height:27px;}
+.editleaddetails .intextwrap label{vertical-align:top;margin-top:8px;display:inline-block;text-transform:uppercase;width:70px;font-size:10px;font-weight:500;color:333;text-align:RIGHT;}
+.editleaddetails .intextwrap input, .editleaddetails .selwrap select{display:inline-block;width:203px;border:0px;font:14px Roboto, sans-serif;font-weight:400;}
+.intextwrap.withsel .selwrap{border:0px;padding-left:0px;font:14px Roboto, sans-serif;font-weight:400;}
+.editleaddetails .selwrap select{display:inline-block;width:233px;border:0px;padding-left:0px;height:20px;margin-top:2px;font:14px Roboto, sans-serif;font-weight:400;}
+.editleaddetails .selwrap select option{padding-left:0px;font:14px Roboto, sans-serif;font-weight:400;}
+.intextwrap .select2-selection--single{border:0px;}
+.intextwrap .select2-container .select2-selection--single .select2-selection__rendered{height:24px;text-align:left;padding-left:2px;font:14px Roboto, sans-serif;font-weight:400;}
+
+.leadupdatebtnwrap{float:left;width:100%;text-align:center;padding:10px 0px 0px 0px;}
+.leadupdatebtn{color:white;cursor:pointer;display:inline-block;border-radius:3px;font:14px Roboto, sans-serif;font-weight:500;text-transform:uppercase;padding:4px 10px 4px 10px;}
+.saleslead .leadupdatebtn, .prospectlead .leadupdatebtn{border:1px solid #060C3B;background:#060C3B;}
+.buylead .leadupdatebtn, .unknownlead .leadupdatebtn{border:1px solid #060C3B;background:#060C3B;}
+.leadform{padding:0px;}
+
+.prospectMessageCont{float:left;width:100%;padding:10px 0 10px 0;text-align:center;}
+.prospectMessageCont .intextwrap{float:left;width:100%;border: 1px solid #060C3B;margin:0px 0px 10px 0px;}
+.prospectMessageCont .intextwrap textarea{float:left;width:100%;border:0px;font:12px Roboto, sans-serif;}
+
+.editleadstatus{display:none;float:left;width:100%;}
+.editleadstatus div{font-size:14px;width:100%;padding:10px 0px 10px 0px;text-align-center;}
+.editleadstatus div .fa{font-size:18px;}
+.editleadstatus div.hide{display:none;}
+.editleadstatus div.active{display:inline-block;}
+.editleadstatus .leadupok{background:green;color:white;}
+.editleadstatus .leadupfail, .closeLeadForm .leadupfail, .popiaFormClass .leadupfail{float:left;width:96%;padding:5px 2% 5px 2%;background:#cc0000;color:white;text-align:left;}
+.editleadstatus .errhead, .closeLeadForm .errhead{float:left;width:96%;padding:0px 0px 0px 10px;text-align:left;font-size:12px;font-weight:500;text-transform:uppercase;}
+.editleadstatus ul, .closeLeadForm ul{float:left;list-style-type:disc;padding:0px 10px;margin:0px 0px 0px 10px;text-align:left;}
+.editleadstatus ul li, .closeLeadForm ul li{padding:0px;margin: 4px 0px 4px 4px;text-align:left;font-size:13px;text-align:left;}
+.closeLeadForm .leadupfail, .popiaFormClass .leadupfail{display:none;}
+
+.emss .errhead{color:#cc0000;float:left;width:96%;padding:10px 0px 0px 10px;text-align:left;font:14px Robot,sans-serif;font-weight:400;text-transform:uppercase;}
+.emss .errhead ul{float:left;list-style-type:disc;padding:0px 10px;margin:5px 0px 0px 10px;text-align:left;}
+.emss .errhead ul li{padding:0px;margin: 4px 0px 4px 4px;text-align:left;font-size:12px;text-align:left;text-transform:none;}
+
+
+.leadactions{float:left;width:96%;padding:10px 2% 5px 2%;text-align:center;border-bottom:0px solid #555;}
+.leadactions.muted{background:#FFE5E5;border:1px solid #cc000;border-radius:3px;}
+.leadactions .popiDont{font:16px Roboto, sans-serif;float:left;padding:3px 10px 3px 0px;}
+
+.leadcontactmethod{padding:3px 2% 4px 1%;max-width:18%;float:left;border-radius:3px;color:#555;border:0px solid #555;font:14px Roboto, sans-serif;font-weight:400;text-transform:uppercase; }
+.leadcontactmethod a{color:#060C3B;font:14px Roboto, sans-serif;font-weight:400;text-transform:uppercase; padding-left:1px;}
+.leadcontactmethod .fa{position:relative;top:1px;}
+.leadcontactmethod .fa:first-child{font-size:14px;padding-right:3px;}
+.leadcontactmethod .fa-external-link-square{font-size:14px;padding-left:5px;padding-right:0px;}
+
+.muted .leadcontactmethod{display:none;}
+.muted .leadcontactmethod.dontcontact{float:left;display:block;color:#cc0000;}
+.leadcontactmethod.dontcontact{min-width:120px;max-width:120px;float:right;padding-right:0px;text-align:right;}
+.leadcontactmethod.dontcontact .fa{position:relative;top:0px;}
+.leadcontactmethod.dontcontact .fa:last-child{padding-right:0px;}
+
+.browseract.popia{text-align:center;background:#555;padding:3px 5px 3px 5px;border-radius:3px;color:white;font:14px Roboto, sans-serif;font-weight:400;text-transform:uppercase; cursor:pointer;float:rigth;}
+
+.leadcontactmethod.emailcontact{text-decoration:underline;cursor:pointer;}
+.leadcontactmethod.emailcontact .fa{text-decoration:none;position:relative;top:0px;padding-right:4px;}
+.leadcontactmethod.gmailLink{padding-left:0px;}
+.emailLeadForm .leadupfail{width:94%;padding:5px 2% 5px 4%;}
+.emailLeadForm .loadingclass{float:left;width:100%;padding:10px;font-size:14px;text-align:center;display:none;}
+.emailLeadForm .loadingclass .fa{font-size:16px;}
+
+
+
+
+
+
+.leadmute{display:none;cursor:pointer;}
+.leadmute.contactallowed{display:inline-block;}
+.muted .leadmute.contactdenied{display:inline-block;}
+.muted .leadmute.contactallowed{display:none;}
+
+.preActionText{border:0px solid green;float:left;width:70px;padding:7px 10px 0px 0px;font: 14px Roboto,sans-serif;color:#060C3B}
+.leadaction{padding:3px 10px 4px 10px;float:left;border-radius:3px;color:#555;border:0px solid #555;font:16px Roboto, sans-serif;font-weight:400;}
+.leadaction .fa{position:relative;top:0px;color:white;font-size:14px;padding-right:3px;}
+.leadactionbutton{cursor:pointer;padding:4px 10px 4px 10px;border-radius:3px;background:#060C3B;color:white;border:1px solid #060C3B;}
+.leadaction a{text-decoration:none;float:left;}
+
+.leadactions .closelead{float:right;width:auto;white-space: nowrap;max-width:250px;padding:3px 0px 4px 0px;}
+.leadactions .closelead .leadactionbutton{width:50px;float:left;margin:0px;color:white;border:0px;}
+.leadactionbutton.wonlead{background:green;}
+.leadactions .closelead .leadactionbutton.lostlead{background:#cc0000;margin-left:10px;}
+.leadactions .closelead .leadactionbutton.closeProspect{background:#cc0000;}
+.leadactions.closeLeadForm{display:none;}
+.leadactions.emailLeadForm{display:none;width:96%;padding: 5px 2% 5px 2%;}
+.leadactions.emailLeadForm label{float:left;width:96%;padding:15px 0px 5px 11px;text-align:left;color: #060C3B;font: 12px Roboto,Roboto,sans-serif;text-decoration: none;text-transform: uppercase;font-weight: 400;}
+.leadactions.emailLeadForm label .fa-question-circle{position:relative;top:-3px;font-size:12px;color:#060C3B;}
+
+.leadactions.emailLeadForm .addtos{margin-top:-2px;float:right;color#555;padding:0px;background:white;border-radius:0px;}
+.leadactions.emailLeadForm .addEmailHeadn{color:#060C3B;font-size:16px;}
+.leadactions.emailLeadForm .addEmailHeadn .fa{position:relative;top:2px;}
+.leadactions.emailLeadForm .addEmail{cursor:pointer;text-transform:none;text-decoration:none;font-weight:400;margin:0px 0px 0px 10px;padding:3px 5px 1px 5px;color:white;background:#85C9CE;border:1px solid #85C9CE;border-radius:3px;}
+
+.leadactions.emailLeadForm textarea{height:300px;width:100%;border:0px;font:14px Roboto, sans-serif;padding:5px;}
+.leadactions.emailLeadForm .selwrap,.leadactions.emailLeadForm .intextwrap{width:570px;font:14px Roboto, sans-serif;}
+.leadactions.emailLeadForm .selwrap input,.leadactions.emailLeadForm .selwrap select, .leadactions.emailLeadForm .intextwrap input{font:14px Roboto, sans-serif;color:#060C3B;}
+
+.leadaction.addprospect .leadactionbutton{background:lightyellow;color:#060C3B;border:1px solid gold;}
+.leadaction.addprospect .leadactionbutton .fa{color:#060C3B;}
+
+.leadaction.closelead .leadactionbutton.reOpenLead, .leadaction.closelead .leadactionbutton.reOpenProspect{background:#555;width:70px;}
+.leadaction.closelead .leadactionbutton.copyLead{background:#85C9CE;width:40px;margin-left:10px;}
+.leadactions.closeLeadForm .intextwrap{box-shadow:none;width:500px;font:14px Roboto, sans-serif;font-weight:400;margin:5px 0px 5px 0px;}
+.leadactions.closeLeadForm .intextwrap textarea{border:0px;width:98%;font:14px Roboto;font-weight:400;color:#060C3B;}
+.leadactions.closeLeadForm .selwrap{box-shadow:none;width:500px;font:14px Roboto, sans-serif;font-weight:400;color:#060C3B;}
+.leadactions.closeLeadForm .selwrap select{font:14px Roboto, sans-serif;font-weight:400;color:#060C3B;}
+.leadactions.closeLeadForm .selwrap select option{font:14px Roboto, sans-serif;font-weight:400;color:#060C3B;}
+.leadactions.closeLeadForm .leadupdatebtnwrap{padding-bottom:20px;}
+
+.leadactions.closeLeadForm .srchfrm{display:none;text-align:center;width:500px;padding-left:50px;text-align:left;padding-bottom:20px;}
+.leadactions.closeLeadForm .addAlert{font:14px Roboto, sans-serif;font-weight:400;color:#060C3B;padding:5px 0px 5px 0px;}
+.leadactions.closeLeadForm .addAlert .addAlertDesc{display:inline-block;text-align:left;width:130px;border:0px solid green;}
+
+.leadactions.closeLeadForm .crithldr.fullW{width:500px;}
+.leadactions.closeLeadForm  .select2-container .select2-search--inline .select2-search__field{margin-top:2px;font:14px Roboto, sans-serif;}
+.leadactions.closeLeadForm .formfldwrap.crithldr{width:110px;margin:10px 5px 0px 5px;}
+.leadactions.closeLeadForm .srchfrm label {font-size:10px;padding-left:0px;}
+.leadactions.closeLeadForm .srchfrm .selwrap{width:110px;margin:0px;}
+.leadactions.closeLeadForm .srchfrm .selwrap select{width:125px;}
+.leadactions.closeLeadForm .srchfrm .selection .select2-selection {border-radius:2px;}
+.leadactions.closeLeadForm .select2-container .select2-selection--multiple{min-height:29px;}
+
+
+.leadactions.popiaFormHolder{display:none;background:#f9f9f9;padding:10px 1% 10px 1%;width:98%;}
+
+.popiaHeading{width:100%;padding:10px 10px 10px 0px;font:16px Roboto,sans-serif;}
+.popiaForm{width:100%;padding:10px 10px 10px 0px;font:16px Roboto,sans-serif;text-align:center;}
+.popiaFormFieldWrapper{display:inline-block;width:160px;vertical-align:top;margin:0px 10px 0px 10px;}
+.popiaFormFieldWrapper .listinlabel{font:12px Roboto, sans-serif;float:left;padding-bottom:5px;}
+.popiaFormFieldWrapper .listinlabel .fa{vertical-align:top;position:relative;top:-3px;font-size:12px;}
+.popiaFormFieldWrapper .intextwrap{width:155px;padding-left:5px;background:white;}
+.popiaFormFieldWrapper .intextwrap input{font-weight:400;color:#060C3B;}
+.popiaFormFieldWrapper .datedisp{font:14px Roboto,sans-serif;text-align:left;display:inline-block;width:130px;padding:4px 0px 4px 0px;height:18px;line-height:18px;background:white;}
+.popiaFormFieldWrapper .calinput .fa-calendar{vertical-align:top;position:relative;top:5px;}
+.popiaFormFieldWrapper .dateinputfiled{display:none;}
+.popiaFormFieldWrapper .jalendar{margin:-10px 0px 0px -10px;}
+.popiaFormFieldWrapper .offinputerr{display:none;font:12px Arial;vertical-align:top;color:#EB0000;padding:0px 0px 20px 0px;clear:both;width:90%;}
+.popiaFormFieldWrapper .intextwrap.attention{border:1px solid #EB0000;}
+
+.popiaanswer{width:290px;float:left;padding:0px 10px 0px 0px;vertical-align:top;}
+.popiasansoptn{cursor:default;width:55px;color:white;height:20px;padding:4px 10px 2px 5px;border-radius:3px;margin-left:7px;float:left;background:#999;}
+.popiasansoptn input{border:0px;}
+.popiasansoptn.optyes{background:green;color:white;margin-left:0px;}
+.popiasansoptn.optno{background:#cc0000;}
+
+
+
+.white-popup.lead{width:600px;padding:15px 10px 15px 10px;}
+.leadpopform{display:inline-block;width:96%;padding:0px 2% 0px 2%;}
+.leadformhead{padding:5px 0px 20px 0px;display:inline-block;width:100%;text-align:center;font:16px Roboto, sans-serif;font-weight:500;text-transform:uppercase;}
+.popformline{display:inline-block;width:100%;padding-top:5px;}
+.popformline.actAddForm{display:none;}
+.leadpopbtnwrap{float:left;width:100%;text-align:center;padding:10px 0px 0px 0px;}
+.leadpopbtnwrap .leadpopbtn{border:1px solid #555;background:#060C3B;color:white;cursor:pointer;display:inline-block;border-radius:3px;font:14px Roboto, sans-serif;font-weight:500;text-transform:uppercase;padding:4px 10px 4px 10px;}
+.leadpopform .intextwrap{width:100%;}
+.leadpopform .intextwrap textarea{height:100%;width:100%;border:0px;font:14px 'Roboto', sans-serif;padding:5px;}
+
+.leadactions.leadhist{background:white;border-top:1px solid #999;padding-top:0px;margin-top:0px;}
+.leadaction:first-child{padding-left:0px;}
+.leadhistitem{float:left;width:581px;margin:20px 0% 0px 0%;border:2px solid #060C3B;border-radius:2px;padding:5px 5px 5px 5px;}
+.leadhistitem.noteitem{border-color:#00cccc;border-width:1px;background:#ccffff;}
+.leadhistitem.eventitem{border-color:#cccc00;border-width:1px;background:#ffffcc;display:none;}
+.leadhistitem.phoneitem{border-color:#dba100;border-width:1px;background:#fcba03;display:none;}
+
+
+.leadactions.leadhist .updatedActivities{width:100%;float:left;}
+
+.leadhistitem.emailitem{background:#d3dcf8;border-color:#0e2058;border-width:1px;display:none;}
+.leadhistitem.emailitem .leadhistitemcont{ width:420px;
+		font:11px Roboto,sans-serif;font-weight:300;text-align:left;float:left;background:white;line-height:15px;
+		color:555;border:1px solid white;border-radius:3px;padding:5px 5px 5px 5px;min-height:0px;margin-top:1px;margin-left:10px;}
+		
+.leadhistitem.emailitem .partytype{width:98%;margin-bottom:7px;margin-top:0px;}
+.leadhistitem.emailitem .mailTopbar{float:left;width:100%;border-bottom:1px solid #999;}
+.leadhistitem.emailitem .mailSubject{width:330px;padding:5px 5px 5px 0px;font:12px Roboto, sans-serif;font-weight:400;float:left;}
+.leadhistitem.emailitem .gmailLink{cursor:pointer;border:0px solid red;width:20px;float:left;font-size:16px; color:black;text-align:center;padding:3px 4px 5px 4px;}
+.leadhistitem.emailitem .gmailLink .fa{color:#060C3B;}
+.leadhistitem.emailitem .emailBody{float:left;width:100%;padding-top:10px;}
+
+.leadhistitem.phoneitem .phoneHistIcon{float:left;border-radius:50%;padding:3px}
+.leadhistitem.phoneitem .phoneHistIcon img{float:left;border:0px;padding:3px;}
+.leadhistitem.phoneitem .phoneHistDets{margin-left:10px;position:relative;top:10px;}
+
+
+
+.leadhistitem.doneactivity{border-color:#bbb;border-width:1px;background:#efefef;}
+.leaddetailhead{float:left;width:100%;border:0px solid blue;}
+.itemcontributor { float: left; text-align: left;width: 130px; padding: 3px 0px 3px 5px; 
+    color: #060C3B;font: 10px Roboto, sans-serif;font-weight: normal;font-weight: 500;}
+.histtypetxt{}
+.histtypecnt{font-size:11px;padding:0px 7px 0px 3px;top:-1px;position:relative;}
+
+.stathead{font-weight:bold;font-size:12px;}
+.statpar{margin:7px 0px 0px 0px;padding:0px;}
+.stathead.toggleLink{text-decoration:underline;cursor:pointer;font-size:13px;padding-left:5px;font-weight:300;}
+.sentMessCont{float:left:width:100%;margin:5px 0px 5px 0px;color:#555;}
+div.showHideText{display:none;float:left:width:97%;padding-left:3%;text-decoration:italics;}
+.prevEmilHeadn{margin-top:20px;}
+
+.actActionLinks{}
+.repriceActLinks{text-decoration:underline;font:14px Roboto, Arial;color:#060C3B;margin:0px 5px 0px 5px;cursor:pointer;}
+.repriceActLinks .fa-refresh{text-decoration:none;padding-right:5px;}
+.repriceActLinks.actButton{cursor: pointer;
+    font: 16px Roboto;
+    font-weight: 400;
+    color: white;
+    background: #85C9CE;
+    padding: 3px 10px 3px 10px;
+    border-radius: 3px;
+    border: 1px solid #85C9CE;
+    text-decoration:none;
+    position:relative;top:-1px;left:5px;
+}
+
+
+.activityitem .acthead{font-size:12px;text-align:left;float:left;width:440px;color:555;border:0px;padding:0px 0px 5px 0px;min-height:40px;margin-top:0px;}
+.actaction{padding:3px 3px 2px 3px;width:80px;text-align:center;float:right;border-radius:3px;color:#555;border:0px solid #555;font:14px Roboto, sans-serif;font-weight:400;text-transform:uppercase; }
+.actaction.donelink.done{border:0px solid green;background:#ebfff4;padding:2px 3px 0px 3px;margin-top:2px;}
+.actaction.done .actactionbutton{color:green;}
+.actaction.donelink{padding:5px 0px 0px 10px;}
+.actaction.actype{float:left;width:200px;text-align:left;margin-top:4px;margin-left:10px;color:#060C3B;font-weight:400;font:14px Roboto,sans-serif;text-transform:none;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+.actactionbutton{padding:4px 5px 5px 5px;width:75px;color:#060C3B;border:0px;font:14px Roboto, sans-serif;font-weight:500;text-transform:uppercase;}
+.actactionbutton .fa-square-o{cursor:pointer;}
+.activityitem .leadhistitemcont{width:98%;}
+
+.actaction .fa{position:relative;top:1px;font-size:14px;padding-right:3px;font-size:16px;padding-left:5px;}
+.actaction.editlink{width:auto;float:left;margin-right:10px;}
+.editactlink{position:relative;top:-5px;cursor:pointer;display:inline-block;background:#060C3B;border-radius:18px;text-transform:uppercase;padding:2px;width:18px;height:18px;}
+.editactlink span{display:inline-block;height:16px;width:16px;text-align:center;border:0px solid #555;font-size:14px;border-radius:50%;margin-right:5px;}
+.editactlink .editholder{margin-right:0px;}
+.editactlink .fa-pencil{padding:0px;color:white;font-size:14px;position:relative;top:0px;}
+
+.actstatsel{border:0px;background:white;font:14px Roboto,sans-serif;font-weight:400;width:70px;float:left;}
+.actstatsel.selwrap{border:1px solid #060C3B;}
+.actstatsel select{font:14px Roboto,sans-serif;font-weight:400;}
+.actstatchg{float:left;cursor:pointer;padding:4px 10px 4px 10px;border-radius:3px;background:#060C3B;color:white;border:1px solid #060C3B;margin-left:10px;}
+.actstatsel.disbale{float:right;border-radius:2px;height:14px;padding:3px 5px 7px 5px;background:#f9f9f9;width:68px;}
+.acthead .statusformwrap{display:inline-block;width:220px;text-align:right;}
+.actstatsel.disbale{text-align:right;}
+
+.leadhistitemcont,.eventitem .leadhistitemcont,.noteitem .leadhistitemcont, .phoneitem .leadhistitemcont{
+		font:14px Roboto,sans-serif;font-weight:300;text-align:left;float:left;width:435px;background:white;color:555;
+		border:1px solid white;border-radius:3px;padding:5px 5px 5px 5px;min-height:0px;margin-top:1px;}
+.leadhistitem.noteitem .leadhistitemcont,.leadhistitem.phoneitem .leadhistitemcont,.leadhistitem.eventitem .leadhistitemcont{width:430px;}
+.leadhistitemcont.actnote{min-height:0px;}
+.leadhistitemcont .notetext{display:inline-block;width:500px;font-size:13px;}
+.leadhisthead{cursor:pointer;padding:10px 0px 0px 0px;margin:0px 10px 0px 10px;font:14px ROBOTO, sans-serif;font-weight:400;text-transform:uppercase;display:inline-block;text-align:left;}
+.activityhead{padding:10px 0px 3px 0px;font:12px Roboto, sans-serif;font-weight:500;text-transform:uppercase;}
+#actdatewrap{padding:4px 5px 4px 5px;width:250px;display:none;}
+#actdatewrap .fa-calendar{padding-right:5px;}
+#activitydatepicker{margin-top:0px;}
+#activitydatepicker .jalendar-pages{padding:0px;}
+#activitydate{display:none;}
+.urgent{
+	border:1px solid #cc0000;
+	background:#FFE5E5;
+	box-shadow: 0px 0px 2px #cc0000;
+}
+.urgent.activityitem .leadhistitemcont{background:white;}
+.clearsel{cursor:pointer;text-decoration:underline;right:0px;float:right;}
+
+#paiddatewrap,#tcsdatewrap{padding:4px 5px 4px 5px;width:250px;display:none;background:white;}
+#paiddatewrap  .fa-calendar,#tcsdatewrap  .fa-calendar{padding-right:5px;}
+#paiddatepicker,#tcsdatepicker{margin-top:0px;}
+#paiddatepicker .jalendar-pages,#tcsdatepicker .jalendar-pages{padding:0px;}
+#paiddate,#tcsdate{display:none;}
+
+#manstat .manstatfield{font:16px Roboto, sans-serif;font-weight:400;padding:20px 0px 5px 5px;}
+.statuschangeinfo{display:none;}
+.leadsummrefresh{display:none;}
+.newbuyleadfrm{padding-top:20px;}
+.newbuyleadfrm .activityhead{margin-top:0px;padding-top:10px;}
+.buyleadinsep{vertical-align:top;display:inline-block;margin:6px 0px 0px 20px;}
+.buyleadinsep span{cursor:pointer;font: 14px Roboto, sans-serif;font-weight: 500;text-transform: uppercase;text-decoration:underline;color:#060C3B;padding-left:10px;}
+.leadfrmindiv{float:left;margin:0px 20px 0px 0px;width:220px;}
+.leadfrmindiv .selwrap, .hostselect .selwrap{width:98%;}
+.hostselect{width:220px;}
+.hostselect .selwrap select{width:260px;}
+
+.cantdoactivity{margin-top:20px;float:left;width:96%;padding:10px 2% 10px 2%;font: 14px Roboto, sans-serif;font-weight: 400;text-transform: uppercase;color:white;background:#ee0000;}
+
+.dateRangeSelDiv{float:left;width:200px;}
+.dateRangeSelDiv .intextwrap{width:185px;padding-left:5px;}
+.dateRangeSelDiv .inwraptext{padding-top:0px;vertical-align:top;top:2px;position:relative;line-height:18px;}
+.dateRangeSelDiv .intextwrap input{font-weight:400;color:#060C3B;}
+
+
+.dateRangeSelDiv .datedisp{display:inline-block;width:160px;padding:4px 0px 4px 0px;height:18px;line-height:18px;text-align:left;font:16px Roboto;font-weight:500px;}
+.dateRangeSelDiv .calinput .fa-calendar{vertical-align:top;position:relative;top:5px;}
+
+.dateRangeSelDiv .dateinputfiled{display:none;}
+.dateRangeSelDiv textarea{height:98%;width:96%;padding:2%;border:0px;font:12px Roboto, sans-serif;}
+.dateRangeSelDiv .offinputerr{font:12px Arial;display:inline-block;vertical-align:top;color:#EB0000;padding:0px 0px 20px 0px;clear:both;width:90%;}
+.dateRangeSelDiv .intextwrap.attention{border:1px solid #EB0000;}
+.dateRangeSelDiv .offercatg .calinput .intextwrap{cursor:pointer;}
+.dateRangeSelDiv #ErrHeading{width:100%;padding:20px 0px 20px 0px;color:#EB0000;font:20px 'Roboto', sans-serif,Arial;font-weight:300;}
+
+.dateRangeSelDiv .jalendar{z-index:9999;position:absolute;display:block;margin:-20px 0px 0px 0px;background-color:#060C3B;width:220px;border:1px solid #efefef;}
+
+.unitButton{padding:2px 5px 2px 5px;font:12px Roboto,sans-serif;border:1px solid #060C3B;border-radius:3px;margin:0px 5px 0px 5px;cursor:pointer;}
+.unitButton.activeUnit{color:white;background:#060C3B;}
+.chartHolderDiv{margin:20px 10px 20px 10px;display:inline-block;border:1px solid #efefef;padding-top:20px;padding-bottom:20px;font-family:Roboto,sans-serif;}
+.chartHolderDiv.pieChart{padding:20px 20px 20px 20px;}
+.chartheader{font:18px Roboto,sans-serif;font-weight:500;text-transform:uppercase;width:100%;text-align:center;color:#060C3B;padding-bottom:10px;}
+.pieChart .chartheader{padding-bottom:20px;}
+.chartheader i{padding-left:2px;font-size:12px;position:relative;top:-5px;}
+.chartheader a{padding-left:2px;font-size:12px;position:relative;top:1px;color:#060C3B;}
+.chartSubHeading{font:16px Roboto,sans-serif;font-weight:400;}
+#reportCharts{width:100%;float:left;margin-top:40px;padding:10px 0 10px 0;text-align:center;background:#efefef;}
+#reportFilter{width:98%;float:left;padding:20px 1% 5px 1%;text-align:center;background:white;}
+#reportFilter .repbutwrap{margin-top:0px;border:1px solid #060C3B;border-radius:2px;background:#060C3B;}
+#reportFilter form{width:100%;padding:0px;}
+#reportFilter .dateRangeSelDiv, #reportFilter .selwrap{float:none;display:inline-block;vertical-align:top;}
+#reportFilter .selwrap select{font:16px Roboto;font-weight:500px;}
+
+#DashboardPage{display:inline-block;width:100%; min-width:1280px;text-align:center;}
+#DashboardContainer{display:inline-block;width:1280px;padding:0px 0px 50px 0px;margin-top:50px;}
+#DashboardContainer .rportelement{display:inline-block;width:400px;margin:10px;padding:10px 0px 0px 0px;background:white;vertical-align:top;}
+#DashboardContainer .rportelement.doubler{width:820px;}
+.rportelement .rportsubelement{display:inline-block;width:380px;margin:10px;padding:0px 0px 0px 0px;background:white;vertical-align:top;overflow-y: auto;height:340px;}
+.rportelement .headstat{display:inline-block;width:100%;font:60px Roboto, sans-serif;font-weight:500;padding:10px 0px 10px 0px;}
+.rportelement .headname{display:inline-block;width:100%;font:18px Roboto, sans-serif;font-weight:500;padding:0px 0px 10px 0px;text-transform:uppercase;}
+.rportelement .subStatHead{font-size:14px;text-transform:none;}
+.headname .fa{font-size:14px;position:relative;top:-5px;right:0px;}
+
+
+
+.dashreptable .oddrec{background:#efefef;}
+.dashreptable .dashreptablehd td{padding:3px;font:14px Roboto, sans-serif;font-weight:500;text-transform:uppercase;}
+.dashreptable td{padding:3px;border-top:1px solid #efefef;}
+.dashreptable .cola{text-align:left;width:100px;font:16px Roboto, sans-serif;font-weight:400;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+.dashreptable .colb{text-align:center;width:100px;}
+.dashreptable .colc{text-align:center;width:100px;padding:0px;text-align:center;}
+.dashreptable .colc span{display:inline-block;text-align:center;padding:1px 10px 1px 10px;border-radius:3px;}
+.dashreptable .colc span.red{background:red;color:white;border:1px solid red;}
+.dashreptable .colc span.yellow{background:yellow;color:black;border:1px solid yellow;}
+.dashreptable .colc span.green{background:green;color:white;border:1px solid green;}
+
+
+
+.rptElCont{display:inline-block;width:100%;font:16px Roboto, sans-serif;font-weight:400;padding:10px 0px 0px 0px;}
+.rptElCont .chartHolderDiv{border:0px;margin:0px;padding:0px;}
+.rportelement .more{width:100%;display:inline-block;font-size:26px;cursor:pointer;color:#060C3B;}
+.rportelement .more:hover{background:#ccc;}
+
+.convElCont{display:inline-block;width:100%;font:16px Roboto, sans-serif;font-weight:400;padding:10px 0px 20px 0px;min-height:200px;}
+.barChartHolder{float:left;width:94%;padding:10px 1% 10px 1%;margin:0 2% 0 2%;border:0px solid #eee;}
+
+#DashboardContainer .rportelement.conv{background:rgba(255, 241, 239, 0.7);text-shadow: #fff 1px 1px 0px;}
+.barChartEl{float:left;width:100%;margin:4px 0px 4px 0px;font:12px Roboto,sans-serif;line-height:20px;}
+.barElementTitle{float:left;text-align:left;width:29%;white-space: nowrap;text-overflow: ellipsis;padding-left:1%;}
+.barElementBar{float:left;text-align:left;background:#ccc;border-radius:0px 5px 5px 0px;height:20px;}
+.barElementNum{float:left;text-align:left;width:9%;padding-left:1%;}
+.barChartHolder .more {font:16px Roboto;line-height:20px;text-decoration:none;padding:5px 0px 5px 0px;color:#406A79;margin-top:5px;border-radius:5px;}
+.barChartHolder .more .fa{font-size:20px;padding-left:5px;top:2px;position:relative;}
+.rportelement.conv .headname{padding:0px 0px 5px 0px;}
+.rportelement .headSubStat{display:inline-block;width:100%;font:16px Roboto, sans-serif;font-weight:500;padding:0px 0px 10px 0px;margin-top:-5px;}
+.barChartHolder.wrapup .toggleLine{display:none;}
+.barChartHolder .more{display:none;}
+.barChartHolder.wrapup .more{display:inline-block;text-shadow:none;}
+
+
+
+.reportDataSection{width:100%;float:left;padding:0px 0 50px 0;text-align:center;background:#efefef;margin-top:40px;}
+.reportDataSection .reportSectionHeader{display:inline-block;width:96%;font:40px Roboto, sans-serif;font-weight:500;padding:20px 0px 20px 10px;text-align:left;}
+
+.chartHolderDiv{background:white;}
+
+.activityEditCont{margin:10px 0px 0px 0px;display:inline-block;padding:20px 2% 10px 2%;width:96%;border-top:1px solid #ccf0ed;}
+.activityEditCont .selwrap{background:white;}
+.activityEditCont .selwrap select{font:14px Roboto,sans-serif;font-weight:400;}
+.activityEditCont button{vertical-align:top;}
+.activityEditCont .viewingchg{margin-left:10px;}
+.activityEditCont .viewingcancel{margin-left:5px;background:#cc0000;border-color:#cc0000;;}
+.activityEditCont .durwrap{margin-left:10px;}
+
+.viewingCalWrap{float:left;width:155px;}
+.activityEditCont .intextwrap{width:155px;padding-left:5px;background:white;}
+.activityEditCont .intextwrap input{font-weight:400;color:#060C3B;}
+.activityEditCont .datedisp{font:14px Roboto,sans-serif;text-align:left;display:inline-block;width:130px;padding:4px 0px 4px 0px;height:18px;line-height:18px;background:white;}
+.activityEditCont .calinput .fa-calendar{vertical-align:top;position:relative;top:5px;}
+.activityEditCont .dateinputfiled{display:none;}
+.activityEditCont .jalendar{margin:-10px 0px 0px -10px;}
+.activityEditCont .offinputerr{display:none;font:12px Arial;vertical-align:top;color:#EB0000;padding:0px 0px 20px 0px;clear:both;width:90%;}
+.activityEditCont .intextwrap.attention{border:1px solid #EB0000;}
+
+
+.changeOfferbtnwrap{float:left;text-align:center;padding:0px 0px 0px 0px;}
+.changeOffViewBtn{border:0px;font:12px Roboto,sans-serif;background:#060C3B;color:white;padding:2px 5px 1px 5px;border-radius:3px;margin:0px 5px 0px 5px;cursor:pointer;}
+.changeOfferbtn{border:0px;margin:5px 0px 0px 5px;font:14px Roboto,sans-serif;background:#060C3B;color:white;padding:5px 5px 5px 5px;border-radius:3px;margin:0px 5px 0px 5px;cursor:pointer;}
+.offerChange{background:white;width:100%;float:left;display:none;padding:5px 0px 5px 0px;}
+.offerChange .intextwrap{float:left;width:80px;margin-left:5px;}
+.offerChange .intextwrap input{font:14px Roboto, sans-serif;}
+
+.pghead .addAdminItem {
+	font-size: 20px;
+	padding: 5px 7px;
+	border: 2px solid #060C3B;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	border-radius: 5px;
+	background: white;
+}
+.pghead .addAdminItem a{color:#060C3B;text-decoration: none;}
+
+#blokAdminTableHolder{margin:0px;width:100%;text-align:Center;padding: 10px 0px 50px 0px;margin: 0px auto;border: 0px solid red;}
+#blokAdminTableHolder .reptable{display:inline-block;width:auto;}
+#blokAdminTableHolder .reptable .lalign{text-align:left;}
+
+
+@media only screen and (max-width: 1259px) {
+.leadholder{width: 620px;}
+.leadholder.active .detailscontent{border-top:0px;left:-1px;border-top:0px;width:615px;}
+.leadholder.active .leadsummary{border-bottom:0px solid #efefef;padding-bottom:5px;border-right:1px solid #060C3B;left:0px;width:615px;z-index:99;margin-left:0px;box-shadow: 2px -1px 3px #999;}
+.leadholder.active .leaddetail{width:615px;margin:0px;}
+.leadholder.active .leaddetailhead{padding-top:10px;}
+.leadholder .detailpostn{position:relative;}
+
+}
+@media only screen and (max-width: 620px) {
+.leadholder{width:360px;overflow-x: scroll;width:98%;}
+.white-popup.lead{width:320px;}
+		
+}

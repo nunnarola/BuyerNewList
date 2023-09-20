@@ -1,0 +1,112 @@
+@CHARSET "ISO-8859-1";
+
+
+.addleadchoicebar{float:left;width:96%;text-align:center;padding:0px 2% 0px 2%;background:white;}
+.addleadchoicebar .leadtypetab{float:none;display:inline-block;position:relative;margin:0px 10px 0px 10px;border-radius:2px 2px 0px 0px;padding:5px 0px 5px 0px;border:1px solid #999;border-bottom:0px;top:1px;}
+.addleadchoicebar .leadtypetab.acttab{padding:6px 0px 8px 0px;top:5px;}
+.addleadchoicebar .leadtypetab a{float:left;text-decoration:none;font:20px Roboto;font-weight:300;color:#333;padding:0px 20px 0px 20px;}
+.addleadchoicebar .leadtypetab.acttab a{font-weight:400;}
+
+#resultsholder.leadtypep{background:rgba(90, 197, 205,0.1);border-top:1px solid rgb(90, 197, 205);}
+
+.leadtypep .addleadchoicebar{border-bottom:orange;}
+
+
+.leadtypep .addleadchoicebar .leadtypetab.acttab{border-bottom:0px;background:#FFF1EF;}
+
+
+.addleadpopform{display:inline-block;width: 660px;max-width: 100%;}
+.addleadformhead{padding:5px 0px 20px 0px;display:inline-block;width:100%;text-align:center;font:16px Quicksand, sans-serif;font-weight:500;text-transform:uppercase;}
+.adldfieldhld{display:inline-block;width:100%;padding-top:5px;text-align:left;}
+.addleadpopbtnwrap{float:left;width:100%;text-align:center;padding:20px 0px 20px 0px;}
+.addleadpopbtnwrap .leadpopbtn{border:1px solid #333;background:#060C3B;color:white;cursor:pointer;display:inline-block;border-radius:3px;font:18px Roboto, sans-serif;font-weight:500;text-transform:uppercase;padding:10px 20px 10px 20px;}
+.addleadpopform .selwrap,.addleadpopform .intextwrap{background:white;width:98%;width:calc(100% - 14px);padding:3px 5px 3px 5px;}
+
+.addleadpopform .selwrap.attention,.addleadpopform .selwrap.inerr,.addleadpopform .intextwrap.inerr,.addleadpopform .intextwrap.attention{border:2px solid #cc0000;}
+.addleadpopform .selwrap select{width:110%;padding-left:0px;   font: 16px "Roboto", sans-serif;font-weight:400;}
+.addleadpopform .selwrap option{font: 16px "Roboto", sans-serif;font-weight:400;}
+.addleadpopform .intextwrap input{  font: 16px "Roboto", sans-serif;font-weight:400;width:98%;padding:4px;width:calc(100% - 12px);}
+
+.addleadpopform .intextwrap.togglewrap{background:none;width:100%;padding:0px;border:0px;box-shadow:none;}
+.addleadpopform .intextwrap.togglewrap.halfWidth{width:50%;}
+.addleadpopform .intextwrap.togglewrap .togglefield{ display:inline-block; font: 12px "Quicksand", sans-serif;font-weight:500;text-transform:uppercase;width:98%;padding:4px 0px 4px 0px;width:calc(100% - 4px);
+border: 0px solid #999;box-shadow:none; border-radius:2px;height:20px;}
+.addleadpopform .intextwrap.togglewrap .togglefield span{ display:inline-block;}
+.addleadpopform .intextwrap.togglewrap .togglefield span .fa{padding-left:6px;font-size: 20px;position: relative;top:2px;cursor:pointer;}
+.addleadpopform .intextwrap.togglewrap .togglefield span .fa-toggle-off{color:#999;}
+
+.addleadpopform .intextwrap textarea{height:200px;width:100%;border:0px;  font: 16px "Roboto", sans-serif;font-weight:400;padding:5px;}
+.leadfieldhead{padding:5px 0px 3px 0px;font:12px Quicksand, sans-serif;text-align:left;font-weight:500;text-transform:uppercase;width:100%;}
+
+.adldfieldhld .AdInputInfo{text-align:left;}
+
+.adldfieldhld#suburbidwrap .select2-selection, .adldfieldhld#listing_idwrap .select2-selection{height:31px;font: 16px "Roboto", sans-serif;font-weight:400;color:black;border-radius:2px;border: 1px solid #999;webkit-box-shadow: inset 0 1px 1px #efefef,0 0 3px #ddd;-moz-box-shadow: inset 0 1px 1px #efefef,0 0 3px #ddd;box-shadow: inset 0 1px 1px #efefef,0 0 3px #ddd;}
+.adldfieldhld#suburbidwrap.inerr .select2-selection, .adldfieldhld#listing_idwrap.inerr .select2-selection {border:2px solid #cc0000;}
+
+.addleadpopform .editleadstatus{margin: 10px 0px 20px 0px;}
+.editleadstatus .leadupok { line-height: 1.5em;font-size:16px;}
+
+
+
+
+#adminPage #contentholder{width:1300px;}
+#adminPage #contentholder.offercontcent{background:white;}
+#adminPage #ErrHeading{font: 20px 'Roboto', sans-serif,Arial;font-weight: 700;color:#cc0000;}
+#adminPage .sepr{float: left; width: 95%; height: 1px;margin: 0px 0% 0px 10px; padding-top: 20px;border-top: 1px solid rgb(20 40 69 / 11%); width: calc(100% - 35px);}
+
+.offercontcent .offhead{font: 30px 'Roboto',sans-serif,Arial;color: #142845;font-weight: 400;}
+#otplinks{width:100%;text-align:center;float:left;margin-top:0px;padding-bottom:30px;color:#333;font:16px "Quicksand", sans-serif;}
+#otplinks a{padding:0px 5px 0px 5px;color:#555;font:16px Roboto, sans-serif;}
+#resultsholder{font-family:Roboto, sans-serif;}
+#resultsholder .profilecatg{width:100%;}
+#resultsholder .offercatg{width:100%;}
+#resultsholder .infobox .infoboxhdr{margin-bottom:20px;}
+#resultsholder .infobox .infoboxhdr h2 {width: 96%;padding: 10px;font: 18px Roboto, sans-serif;font-weight: 400;}
+#resultsholder .infobox .infoboxct{width:240px;padding: 0px 0px 0px 10px;flex: 1; border: 0px;max-width: 240px;font:16px Roboto,sans-serif;font-weight:400;}
+#adminPage .yesnopick .selwrap {width:215px;}
+#adminPage .offercatg .intextwrap{width:215px;}
+#adminPage .offercatg .currencyinput{width:190px;}
+#resultsholder .infobox .infoboxct.textB{width:95%;max-width:100%;flex:none;width:calc(100% - 25px);}
+#resultsholder .infobox .infoboxct.textB .intextwrap{width: 96%;width: calc(100% - 15px);}
+#resultsholder .infobox .infoboxct.textB textArea{width:100%;border:0px;height:100px;font:16px Roboto,sans-serif;}
+
+.offercatg .infoboxct .inwraptext{padding-top:2px;}
+#resultsholder .offinf { padding-bottom: 0px; display: inline-block; font-size: 12px; vertical-align: top; color: #999;font-weight: 400;}
+
+.singleLiner{width:100%;margin:0px;float:left;}
+#resultsholder .infobox .singleLiner .infoboxct{width:95%;max-width:100%;flex:none;width:calc(100% - 25px);}
+.singleLiner .oofrindrop{width:100%;}
+
+#ErrHeading ul{display: inline-block;list-style-type: disc;padding: 0px 10px;margin: 10px 0px 0px 10px;text-align: left;width: 700px;}
+#ErrHeading ul li{padding:0px;margin: 4px 0px 4px 4px;text-align:left;font: 16px Roboto,sans-serif; font-weight: normal;
+font-weight: 400;text-align:left;color:#cc0000;}
+
+#resultsholder .infobox .sectn{
+	float: left;
+    width: 99%;
+    padding-left:1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#adminPage label.listinlabel.adminFormCls{padding: 5px 0px 3px 0px;float:left;font: 12px Roboto,sans-serif;color: #555; font-weight: 500;text-transform: uppercase;overflow:hidden;}
+
+#adminPage .yesnopick{text-align:left;margin-top:-3px;vertical-align:top;}
+#adminPage .yesnopick .selwrap select{font:16px Roboto,sans-serif;font-weight:400;width:auto;min-width:300px;}
+
+.infobox .selwrap select option,.infobox .intextwrap input {font:16px Roboto,sans-serif;font-weight:400;display: inline-block;}
+.infobox .oofrindrop{padding: 0px 2px 3px 0px;overflow: auto;width: 225px;}
+.inwraptext.changeoptval .fa{color:#333;margin-left: 5px;}
+
+.adminErrorInfo{padding: 0px 0px 10px 0px;text-align:left;}
+.adminErrorInfo .adErrorString{font-size:14px;color:#cc0000;}
+
+#profphothold{margin-top:10px;padding-top:0px;}
+#profphothold #chpcbt{font-weight:400;text-decoration:none;position:relative;left:20px;vertical-align:top;top:50px;cursor:pointer;display:inline-block;background:#c0c0c0;border-radius:3px;padding:3px 5px 4px 5px;color:white}
+#profphothold .infobox{margin-bottom:5px;}
+#profphothold.attention .infobox{border: 2px solid #cc0000;border-radius: 6px 6px 0px 0px; width:98%;width:calc(100% - 4px);}
+
+@media only screen and (max-width: 620px) {
+
+		
+}
