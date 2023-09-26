@@ -1,6 +1,4 @@
-<%@page import="admin.Team" %>
-<%@ page import="javax.servlet.jsp.JspWriter" %>
-<%@ page import="glider.FormUtils" %>
+<%@page import="glider.FormUtils" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <jsp:useBean id="comm" scope="page" class="glider.Common"/>
 <%--<%@ include file="/include/headvars.jsp" %>--%>
@@ -24,7 +22,7 @@
     sHeadFileIncludes = sHeadFileIncludes + "<script type='text/javascript' src='/resources/js/jquery.plupload.queue.min.js' charset='UTF-8'></script>";
     sHeadFileIncludes = sHeadFileIncludes + "</head>";
 
-    StringBuffer str=new StringBuffer();
+    StringBuffer str = new StringBuffer();
     str.append(sHeadFileIncludes);
     out.print(str);
 
@@ -360,10 +358,10 @@
 <div class="leadlisthlder" id="adminPage" style="background:white;">
 
 
-<%--    <% if (bIsAuthorised) {--%>
-<%--        if (theObject != null) {--%>
+    <%--    <% if (bIsAuthorised) {--%>
+    <%--        if (theObject != null) {--%>
 
-<%--    %>--%>
+    <%--    %>--%>
 
     <div class="pghead">
         <h1><%= sPageTitle %>
@@ -487,21 +485,21 @@
                                 <div class='infoboxhdr'>
                                     <h2>Photo</h2>
                                 </div>
-<%--                                <% boolean bGotPic = false;--%>
-<%--                                    // verified status. 1 Uploaded manually, 2 is using facebook photo 0 got nothing--%>
-<%--                                    String sImageURL = lm.GetCloudFrontPrefix() + "/images_static/dot.png";--%>
+                                <%--                                <% boolean bGotPic = false;--%>
+                                <%--                                    // verified status. 1 Uploaded manually, 2 is using facebook photo 0 got nothing--%>
+                                <%--                                    String sImageURL = lm.GetCloudFrontPrefix() + "/images_static/dot.png";--%>
 
-<%--                                    if (!"".equals(comm.nnt(image_url))) {--%>
-<%--                                        bGotPic = true;--%>
-<%--                                        if (image_url.indexOf("http") == 0) {--%>
-<%--                                            sImageURL = image_url;--%>
-<%--                                        } else {--%>
-<%--                                            sImageURL = lm.GetProfilePrefix() + image_url + ".jpg";--%>
-<%--                                        }--%>
-<%--                                    }--%>
+                                <%--                                    if (!"".equals(comm.nnt(image_url))) {--%>
+                                <%--                                        bGotPic = true;--%>
+                                <%--                                        if (image_url.indexOf("http") == 0) {--%>
+                                <%--                                            sImageURL = image_url;--%>
+                                <%--                                        } else {--%>
+                                <%--                                            sImageURL = lm.GetProfilePrefix() + image_url + ".jpg";--%>
+                                <%--                                        }--%>
+                                <%--                                    }--%>
 
 
-<%--                                %>--%>
+                                <%--                                %>--%>
                                 <div class='infoboxct' id="agentPhoto">
 
                                     <div class='profpicprsnt '>
@@ -511,26 +509,26 @@
                                             <div class='verval'>
 
                                                 <div id='profpic'>
-<%--                                                    <img src=<%=sImageURL %>--%>
-<%--                                                        <% if(!bGotPic){out.print(" style='display:none;'");}%>>--%>
-<%--                                                    <span class="prfldholder"--%>
-<%--                                                            <% if (bGotPic) {--%>
-<%--                                                                out.print(" style='display:none;'");--%>
-<%--                                                            }%>><i--%>
-<%--                                                            class='fa fa-user' aria-hidden='true'></i></span>--%>
+                                                    <%--                                                    <img src=<%=sImageURL %>--%>
+                                                    <%--                                                        <% if(!bGotPic){out.print(" style='display:none;'");}%>>--%>
+                                                    <%--                                                    <span class="prfldholder"--%>
+                                                    <%--                                                            <% if (bGotPic) {--%>
+                                                    <%--                                                                out.print(" style='display:none;'");--%>
+                                                    <%--                                                            }%>><i--%>
+                                                    <%--                                                            class='fa fa-user' aria-hidden='true'></i></span>--%>
                                                 </div>
                                                 <span class="chgpg" id="chpcbt" onclick="showpicloadr();">Upload</span>
-<%--                                                <span class="chgpg" id="delpcbt"--%>
-<%--                                                      onclick="quickDelPic('<%= imageURLInputId %>');" <%--%>
-<%--                                                    if (!bGotPic) {--%>
-<%--                                                        out.print(" style='display:none;'");--%>
-<%--                                                    }%>>Delete</span>--%>
+                                                <%--                                                <span class="chgpg" id="delpcbt"--%>
+                                                <%--                                                      onclick="quickDelPic('<%= imageURLInputId %>');" <%--%>
+                                                <%--                                                    if (!bGotPic) {--%>
+                                                <%--                                                        out.print(" style='display:none;'");--%>
+                                                <%--                                                    }%>>Delete</span>--%>
                                             </div>
-<%--                                            <span class="upok" style="display: inline-block;" id="profpires"><i--%>
-<%--                                                    class='fa fa-check-circle' aria-hidden='true'--%>
-<%--                                                    <% if (!bGotPic) {--%>
-<%--                                                        out.print(" style='display:none;'");--%>
-<%--                                                    }%>></i></span>--%>
+                                            <%--                                            <span class="upok" style="display: inline-block;" id="profpires"><i--%>
+                                            <%--                                                    class='fa fa-check-circle' aria-hidden='true'--%>
+                                            <%--                                                    <% if (!bGotPic) {--%>
+                                            <%--                                                        out.print(" style='display:none;'");--%>
+                                            <%--                                                    }%>></i></span>--%>
                                             <div id="profpicloader">
                                                 <div class='picloadcontainer'>
 									<span id="picloadbtncont" class='loadbttncontainer'>
@@ -550,7 +548,7 @@
                                             </div>
                                         </div>
 
-<%--                                        <%@ include file="/include/blok_photoup.jsp" %>--%>
+                                        <%--                                        <%@ include file="/include/blok_photoup.jsp" %>--%>
 
 
                                     </div>
@@ -576,16 +574,16 @@
 
         </div>
     </FORM>
-<%--    <%--%>
+    <%--    <%--%>
 
-<%--            } else {--%>
-<%--                sMessage = "<div class='repnauth' style='color:red;'>Unable to get " + objectName + " Data.</div>";--%>
-<%--                out.print(sMessage);--%>
-<%--            }--%>
-<%--        } else {--%>
-<%--            sMessage = "<div class='repnauth' style='color:red;'>You are not authorised to view this page.</div>";--%>
-<%--            out.print(sMessage);--%>
-<%--        } %>--%>
+    <%--            } else {--%>
+    <%--                sMessage = "<div class='repnauth' style='color:red;'>Unable to get " + objectName + " Data.</div>";--%>
+    <%--                out.print(sMessage);--%>
+    <%--            }--%>
+    <%--        } else {--%>
+    <%--            sMessage = "<div class='repnauth' style='color:red;'>You are not authorised to view this page.</div>";--%>
+    <%--            out.print(sMessage);--%>
+    <%--        } %>--%>
 
 </div>
 

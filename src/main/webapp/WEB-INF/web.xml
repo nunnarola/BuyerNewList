@@ -9,7 +9,7 @@
   <display-name>Archetype Created Web Application</display-name>
 
   <welcome-file-list>
-    <welcome-file>Agent.jsp</welcome-file> <!-- Default page 1 -->
+    <welcome-file>Service Request.jsp</welcome-file> <!-- Default page 1 -->
   </welcome-file-list>
 
 </web-app>

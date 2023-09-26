@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Objects;
 
 
 public class FormUtils {
@@ -33,7 +34,7 @@ public class FormUtils {
             }
 
             String subTextHtml = "";
-            if (!"".equals(common.nnt(subText))) {
+            if (Objects.nonNull(subText) && !"".equals(common.nnt(subText))) {
                 subTextHtml = "<span class='offinf'>" + subText + "</span>";
             }
 
@@ -106,7 +107,7 @@ public class FormUtils {
             }
 
             String subTextHtml = "";
-            if (!"".equals(common.nnt(subText))) {
+            if (Objects.nonNull(subText) && (!"".equals(common.nnt(subText)))) {
                 subTextHtml = "<span class='offinf'>" + subText + "</span>";
             }
 
@@ -145,6 +146,26 @@ public class FormUtils {
 
     }
 
+    public String getHeadingDiv(int headingLevel, String heading) {
+
+        StringBuffer r = new StringBuffer();
+        try {
+
+            r.append("<div class='form-heading'>");
+            r.append("<h" + headingLevel + ">" + heading + "</h" + headingLevel + ">");
+            r.append("</div>");
+
+
+        } catch (Exception e) {
+            common.Logit("Exception in getHeadingDiv for heading level:" + headingLevel + " value:" + heading);
+            e.printStackTrace();
+            r = new StringBuffer();
+        }
+
+        return r.toString();
+
+    }
+
 
     public String getTextBoxInput(String name, String heading, String value, String errorMessage, String subText) {
 
@@ -158,7 +179,7 @@ public class FormUtils {
             }
 
             String subTextHtml = "";
-            if (!"".equals(common.nnt(subText))) {
+            if (Objects.nonNull(subText) && !"".equals(common.nnt(subText))) {
                 subTextHtml = "<span class='offinf'>" + subText + "</span>";
             }
 
@@ -166,7 +187,7 @@ public class FormUtils {
             r.append("<div class='adldfieldhld'>");
             r.append("<h2 class='leadfieldhead'>" + heading + "</h2>");
             r.append("<div class='intextwrap compuls " + errorClass + "'>");
-            r.append("<textarea name='" + name + "' id='" + name + "'>" + value + "</textarea>");
+            r.append("<textarea name='" + name + "' id='" + name + "' placeholder=\"Enter text here...\" >" + ((Objects.nonNull(value)) ? value : "") + "</textarea>");
             r.append("</div>");
             r.append(subTextHtml);
             r.append("<div class='AdInputInfo'><span class='aperm'>" + common.nnt(errorMessage) + "</span></div>");
@@ -220,7 +241,7 @@ public class FormUtils {
             }
 
             String subTextHtml = "";
-            if (!"".equals(common.nnt(subText))) {
+            if (Objects.nonNull(subText) && !"".equals(common.nnt(subText))) {
                 subTextHtml = "<span class='offinf'>" + subText + "</span>";
             }
 
@@ -267,6 +288,68 @@ public class FormUtils {
 
     }
 
+    public String getRadioInput(String name, String heading, String value, LinkedHashMap<String, String> values, String errorMessage, String subText) {
+        return getRadioInput(name, heading, value, values, errorMessage, subText, false);
+    }
+
+    public String getRadioInput(String name, String heading, String value, LinkedHashMap<String, String> values, String errorMessage, String subText, boolean hasSelectRequest) {
+
+        StringBuffer r = new StringBuffer();
+        try {
+
+            value = common.nnt(value);
+
+            String errorClass = "";
+            if (!"".equals(common.nnt(errorMessage))) {
+                errorClass = "inerr";
+            }
+
+            String subTextHtml = "";
+            if (Objects.nonNull(subText) && !"".equals(common.nnt(subText))) {
+                subTextHtml = "<span class='offinf'>" + subText + "</span>";
+            }
+
+
+            r.append("<div class='adldfieldhld'>");
+            r.append("<h2 class='leadfieldhead'>" + heading + "</h2>");
+
+            StringBuffer options = new StringBuffer();
+            boolean gotEmptyStringAsOtion = false;
+            if (Objects.isNull(value)) {
+                value = "0";
+            } else if (value.equals("true")) {
+                value = "1";
+            } else if (value.equals("false")) {
+                value = "0";
+            }
+            for (String key : values.keySet()) {
+                options.append("<label>");
+                options.append("<input type=\"radio\" name='" + name + "' value='" + key + "' id='" + name + values.get(key) + "'");
+                if (key.equals("" + value)) {
+                    options.append(" checked ");
+                }
+                if ("".equals(key)) {
+                    gotEmptyStringAsOtion = true;
+                }
+                options.append(">" + values.get(key));
+                options.append("</label>");
+            }
+            r.append(options);
+            r.append(subTextHtml);
+            r.append("<div class='AdInputInfo'><span class='aperm'>" + common.nnt(errorMessage) + "</span></div>");
+            r.append("</div>");
+
+
+        } catch (Exception e) {
+            common.Logit("Exception in getRadioInput for name:" + name + " value:" + value);
+            e.printStackTrace();
+            r = new StringBuffer();
+        }
+
+        return r.toString();
+
+    }
+
 
     public String getTextDisplay(String editLink, String heading, String value) {
 
@@ -286,7 +369,7 @@ public class FormUtils {
             }
 
             String subTextHtml = "";
-            if (!"".equals(common.nnt(subText))) {
+            if (Objects.nonNull(subText) && !"".equals(common.nnt(subText))) {
                 subTextHtml = "<span class='offinf'>" + subText + "</span>";
             }
 
@@ -378,7 +461,6 @@ public class FormUtils {
         return r;
     }
 
-
     public String validateList(boolean compulsory, String value, String fieldName, String[][] allowableValues) {
 
         String r = "";
@@ -433,7 +515,7 @@ public class FormUtils {
                     r += "Enter a value for " + fieldName + ".";
                 }
 
-                if (longValue == 0) {
+                if (greaterthanZero && longValue <= 0) {
                     r += "Enter a value for " + fieldName + ".";
                 }
             }
@@ -464,12 +546,12 @@ public class FormUtils {
             } else {
                 int intValue = 0;
                 try {
-                    intValue = new Integer(value.trim()).intValue();
+                    intValue = Integer.parseInt(value);
                 } catch (Exception ex) {
                     r += "Enter a value for " + fieldName + ".";
                 }
 
-                if (intValue == 0) {
+                if (greaterthanZero && intValue <= 0) {
                     r += "Enter a value for " + fieldName + ".";
                 }
             }
@@ -502,7 +584,7 @@ public class FormUtils {
                 double doubleValue = 0.0d;
 
                 try {
-                    doubleValue = new Double(value.trim()).doubleValue();
+                    doubleValue = Double.parseDouble(value);
                 } catch (Exception ex) {
                     r += "Enter a valid value for " + fieldName + ".";
                 }
@@ -589,5 +671,31 @@ public class FormUtils {
 
     }
 
+    public LinkedHashMap<String, String> populateUserTypeOptions() {
+        String[][] userTypeOptions = {
+                {"Buyer", "Buyer"},
+                {"Seller", "Seller"},
+                // Add more rows as needed
+        };
+        return common.convertArrayToHashMap(userTypeOptions);
+    }
+
+    public LinkedHashMap<String, String> populateYesNoOptions() {
+        String[][] yesNoOptions = {
+                {"1", "Yes"},
+                {"0", "No"},
+                // Add more rows as needed
+        };
+        return common.convertArrayToHashMap(yesNoOptions);
+    }
+
+    public LinkedHashMap<String, String> populateLeadReferralOptions() {
+        String[][] yesNoOptions = {
+                {"Zillow", "Zillow"},
+                {"Internal", "Internal"},
+                // Add more rows as needed
+        };
+        return common.convertArrayToHashMap(yesNoOptions);
+    }
 
 }

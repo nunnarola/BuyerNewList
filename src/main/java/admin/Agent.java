@@ -1,18 +1,17 @@
 package admin;
 
 
+import glider.Common;
+import glider.DbBean;
+import glider.FormUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.crypto.RandomNumberGenerator;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 
-import glider.Common;
-import glider.DbBean;
-import glider.FormUtils;
-
 public class Agent {
 
-	private long id = 0l;
+    private long id = 0l;
     private String username = null;
     private String first_name = null;
     private String last_name = null;
@@ -30,7 +29,7 @@ public class Agent {
     private String crm_id = null;
     private String tax_no = null;
     private String ffc = null;
-    private String ppra_role  = null;
+    private String ppra_role = null;
     private double latitude = 0.00d;
     private double longitude = 0.00d;
     private String updated = null;
@@ -50,9 +49,8 @@ public class Agent {
     private long brokerageId = 0l;
     private String education = null;
     private String address = null;
-    
 
-    
+
     Common common = new Common();
     FormUtils formUtils = new FormUtils();
     DbBean db = null;
@@ -73,10 +71,10 @@ public class Agent {
     public String setUsername(String value) {
         String r = formUtils.validateStringField(true, 45, value, "Username");
         if ("".equals(r)) {
-        	if (common.isValidEmailAddress(value)) {
-        		this.username = value;
-        	}else {
-        	}
+            if (common.isValidEmailAddress(value)) {
+                this.username = value;
+            } else {
+            }
         }
         return r;
     }
@@ -113,9 +111,9 @@ public class Agent {
         String r = formUtils.validateStringField(true, 20, value, "Phone");
         if ("".equals(r)) {
             if (common.isValidPhNum(value)) {
-            	this.phone = value;
-            }else {
-            	r = "Enter a valid Phone Number.";
+                this.phone = value;
+            } else {
+                r = "Enter a valid Phone Number.";
             }
         }
         return r;
@@ -151,7 +149,7 @@ public class Agent {
 
 
     public String setLocked(String value) {
-    	System.out.println("setlocked value:" + value + ":" + this.locked);
+        System.out.println("setlocked value:" + value + ":" + this.locked);
         String r = formUtils.validateBooleanField(value, "Locked");
         if ("".equals(r)) {
             this.locked = "1".equals(value);
@@ -224,317 +222,310 @@ public class Agent {
         return pic_ver;
     }
 
-    
-    
-    
-    
-    
 
+    public String getImage_url() {
+        return image_url;
+    }
 
-        public String getImage_url() {
-            return image_url;
+    public String setImage_url(String value) {
+        String r = formUtils.validateStringField(true, 125, value, "Image");
+        if ("".equals(r)) {
+            this.image_url = value;
         }
+        return r;
+    }
 
-        public String setImage_url(String value) {
-            String r = formUtils.validateStringField(true, 125, value, "Image");
-            if ("".equals(r)) {
-                this.image_url = value;
-            }
-            return r;
+    public String getFusion_id() {
+        return fusion_id;
+    }
+
+    public String setFusion_id(String value) {
+        String r = formUtils.validateStringField(true, 25, value, "MLS ID");
+        if ("".equals(r)) {
+            this.fusion_id = value;
         }
+        return r;
+    }
 
-        public String getFusion_id() {
-            return fusion_id;
+    public String getCrm_id() {
+        return crm_id;
+    }
+
+    public String setCrm_id(String value) {
+        String r = formUtils.validateStringField(false, 18, value, "CRM ID");
+        if ("".equals(r)) {
+            this.crm_id = value;
         }
+        return r;
+    }
 
-        public String setFusion_id(String value) {
-            String r = formUtils.validateStringField(true, 25, value, "MLS ID");
-            if ("".equals(r)) {
-                this.fusion_id = value;
-            }
-            return r;
+    public String getTax_no() {
+        return tax_no;
+    }
+
+    public String setTax_no(String value) {
+        String r = formUtils.validateStringField(true, 25, value, "Tax Number");
+        if ("".equals(r)) {
+            this.tax_no = value;
         }
+        return r;
+    }
 
-        public String getCrm_id() {
-            return crm_id;
+    public String getFfc() {
+        return ffc;
+    }
+
+    public String setFfc(String value) {
+        String r = formUtils.validateStringField(true, 25, value, "License No.");
+        if ("".equals(r)) {
+            this.ffc = value;
         }
+        return r;
+    }
 
-        public String setCrm_id(String value) {
-            String r = formUtils.validateStringField(false, 18, value, "CRM ID");
-            if ("".equals(r)) {
-                this.crm_id = value;
-            }
-            return r;
+    public String getPpra_role() {
+        return ppra_role;
+    }
+
+    public String setPpra_role(String value) {
+        String r = formUtils.validateStringField(true, 50, value, "Professional Title");
+        if ("".equals(r)) {
+            this.ppra_role = value;
         }
+        return r;
+    }
 
-        public String getTax_no() {
-            return tax_no;
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public String setLatitude(String value) {
+        String r = formUtils.validateDoubleField(false, value, "Latitude");
+        if ("".equals(r)) {
+            this.latitude = Double.parseDouble(value);
         }
+        return r;
+    }
 
-        public String setTax_no(String value) {
-            String r = formUtils.validateStringField(true, 25, value, "Tax Number");
-            if ("".equals(r)) {
-                this.tax_no = value;
-            }
-            return r;
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public String setLongitude(String value) {
+        String r = formUtils.validateDoubleField(false, value, "Longitude");
+        if ("".equals(r)) {
+            this.longitude = Double.parseDouble(value);
         }
+        return r;
+    }
 
-        public String getFfc() {
-            return ffc;
+    public String getUpdated() {
+        return updated;
+    }
+
+    public String setUpdated(String value) {
+        String r = formUtils.validateStringField(true, 18, value, "Updated");
+        if ("".equals(r)) {
+            this.updated = value;
         }
+        return r;
+    }
 
-        public String setFfc(String value) {
-            String r = formUtils.validateStringField(true, 25, value, "License No.");
-            if ("".equals(r)) {
-                this.ffc = value;
-            }
-            return r;
+    public long getUpdatedBy() {
+        return updated_by;
+    }
+
+    // Setters
+    public String setId(String value) {
+        String r = formUtils.validateLongField(false, value, "ID");
+        if ("".equals(r)) {
+            this.id = Long.parseLong(value);
         }
+        return r;
+    }
 
-        public String getPpra_role() {
-            return ppra_role;
+    public String getBio() {
+        return bio;
+    }
+
+    public String setBio(String value) {
+        String r = formUtils.validateStringField(true, 999999, value, "Bio");
+        if ("".equals(r)) {
+            this.bio = value;
         }
+        return r;
+    }
 
-        public String setPpra_role(String value) {
-            String r = formUtils.validateStringField(true, 50, value, "Professional Title");
-            if ("".equals(r)) {
-                this.ppra_role = value;
-            }
-            return r;
+    public String getLinkedInLink() {
+        return linkedInLink;
+    }
+
+    public String setLinkedInLink(String value) {
+        String r = formUtils.validateURLField(false, 100, value, "LinkedIn Link");
+        if ("".equals(r)) {
+            this.linkedInLink = value;
         }
+        return r;
+    }
 
-        public double getLatitude() {
-            return latitude;
+
+    public String getFbLink() {
+        return fbLink;
+    }
+
+    public String setFbLink(String value) {
+        String r = formUtils.validateURLField(false, 100, value, "Facebook Link");
+        if ("".equals(r)) {
+            this.fbLink = value;
         }
+        return r;
+    }
 
-        public String setLatitude(String value) {
-            String r = formUtils.validateDoubleField(false, value, "Latitude");
-            if ("".equals(r)) {
-                this.latitude = Double.parseDouble(value);
-            }
-            return r;
+    public String getTwitterLink() {
+        return twitterLink;
+    }
+
+    public String setTwitterLink(String value) {
+        String r = formUtils.validateURLField(false, 100, value, "Twitter Link");
+        if ("".equals(r)) {
+            this.twitterLink = value;
         }
+        return r;
+    }
 
-        public double getLongitude() {
-            return longitude;
+    public String getInstaLink() {
+        return instaLink;
+    }
+
+    public String setInstaLink(String value) {
+        String r = formUtils.validateURLField(false, 100, value, "Instagram Link");
+        if ("".equals(r)) {
+            this.instaLink = value;
         }
+        return r;
+    }
 
-        public String setLongitude(String value) {
-            String r = formUtils.validateDoubleField(false, value, "Longitude");
-            if ("".equals(r)) {
-                this.longitude = Double.parseDouble(value);
-            }
-            return r;
+    public String getTiktokLink() {
+        return tiktokLink;
+    }
+
+    public String setTiktokLink(String value) {
+        String r = formUtils.validateURLField(false, 100, value, "Tiktok Link");
+        if ("".equals(r)) {
+            this.tiktokLink = value;
         }
+        return r;
+    }
 
-        public String getUpdated() {
-            return updated;
+    public String getQualifications() {
+        return qualifications;
+    }
+
+    public String setQualifications(String value) {
+        String r = formUtils.validateStringField(true, 255, value, "Qualifications");
+        if ("".equals(r)) {
+            this.qualifications = value;
         }
+        return r;
+    }
 
-        public String setUpdated(String value) {
-            String r = formUtils.validateStringField(true, 18, value, "Updated");
-            if ("".equals(r)) {
-                this.updated = value;
-            }
-            return r;
+    public String getLanguagesSpoken() {
+        return languagesSpoken;
+    }
+
+    public String setLanguagesSpoken(String value) {
+        String r = formUtils.validateStringField(true, 100, value, "Languages Spoken");
+        if ("".equals(r)) {
+            this.languagesSpoken = value;
         }
-        public long getUpdatedBy() {
-            return updated_by;
+        return r;
+    }
+
+    public String getEaziAwards() {
+        return eaziAwards;
+    }
+
+    public String setEaziAwards(String value) {
+        String r = formUtils.validateStringField(false, 255, value, "Awards");
+        if ("".equals(r)) {
+            this.eaziAwards = value;
         }
+        return r;
+    }
 
-        // Setters
-        public String setId(String value) {
-            String r = formUtils.validateLongField(false, value, "ID");
-            if ("".equals(r)) {
-                this.id = Long.parseLong(value);
-            }
-            return r;
+    public String getPrequalLink() {
+        return prequalLink;
+    }
+
+    public String setPrequalLink(String value) {
+        String r = formUtils.validateURLField(false, 100, value, "Prequal Link");
+        if ("".equals(r)) {
+            this.prequalLink = value;
         }
-        public String getBio() {
-            return bio;
+        return r;
+    }
+
+    public String getFfcDocLink() {
+        return ffcDocLink;
+    }
+
+    public String setFfcDocLink(String value) {
+        String r = formUtils.validateURLField(false, 100, value, "License Link");
+        if ("".equals(r)) {
+            this.ffcDocLink = value;
         }
+        return r;
+    }
 
-        public String setBio(String value) {
-            String r = formUtils.validateStringField(true, 999999, value, "Bio");
-            if ("".equals(r)) {
-                this.bio = value;
-            }
-            return r;
+    public long getTeamId() {
+        return teamId;
+    }
+
+    public String setTeamId(String value) {
+        String r = formUtils.validateLongField(true, value, "Team ID");
+        if ("".equals(r)) {
+            this.teamId = Long.parseLong(value);
         }
+        return r;
+    }
 
-        public String getLinkedInLink() {
-            return linkedInLink;
+    public long getBrokerageId() {
+        return brokerageId;
+    }
+
+    public String setBrokerageId(String value) {
+        String r = formUtils.validateLongField(true, value, "Brokerage ID");
+        if ("".equals(r)) {
+            this.brokerageId = Long.parseLong(value);
         }
+        return r;
+    }
 
-        public String setLinkedInLink(String value) {
-            String r = formUtils.validateURLField(false, 100, value, "LinkedIn Link");
-            if ("".equals(r)) {
-                this.linkedInLink = value;
-            }
-            return r;
+    public String getEducation() {
+        return education;
+    }
+
+    public String setEducation(String value) {
+        String r = formUtils.validateStringField(false, 255, value, "Education");
+        if ("".equals(r)) {
+            this.education = value;
         }
+        return r;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String setAddress(String value) {
+        String r = formUtils.validateStringField(true, 255, value, "Address");
+        if ("".equals(r)) {
+            this.address = value;
+        }
+        return r;
+    }
 
 
-  
-
-            public String getFbLink() {
-                return fbLink;
-            }
-
-            public String setFbLink(String value) {
-                String r = formUtils.validateURLField(false, 100, value, "Facebook Link");
-                if ("".equals(r)) {
-                    this.fbLink = value;
-                }
-                return r;
-            }
-
-            public String getTwitterLink() {
-                return twitterLink;
-            }
-
-            public String setTwitterLink(String value) {
-                String r = formUtils.validateURLField(false, 100, value, "Twitter Link");
-                if ("".equals(r)) {
-                    this.twitterLink = value;
-                }
-                return r;
-            }
-
-            public String getInstaLink() {
-                return instaLink;
-            }
-
-            public String setInstaLink(String value) {
-                String r = formUtils.validateURLField(false, 100, value, "Instagram Link");
-                if ("".equals(r)) {
-                    this.instaLink = value;
-                }
-                return r;
-            }
-
-            public String getTiktokLink() {
-                return tiktokLink;
-            }
-
-            public String setTiktokLink(String value) {
-                String r = formUtils.validateURLField(false, 100, value, "Tiktok Link");
-                if ("".equals(r)) {
-                    this.tiktokLink = value;
-                }
-                return r;
-            }
-
-            public String getQualifications() {
-                return qualifications;
-            }
-
-            public String setQualifications(String value) {
-                String r = formUtils.validateStringField(true, 255, value, "Qualifications");
-                if ("".equals(r)) {
-                    this.qualifications = value;
-                }
-                return r;
-            }
-
-            public String getLanguagesSpoken() {
-                return languagesSpoken;
-            }
-
-            public String setLanguagesSpoken(String value) {
-                String r = formUtils.validateStringField(true, 100, value, "Languages Spoken");
-                if ("".equals(r)) {
-                    this.languagesSpoken = value;
-                }
-                return r;
-            }
-
-            public String getEaziAwards() {
-                return eaziAwards;
-            }
-
-            public String setEaziAwards(String value) {
-                String r = formUtils.validateStringField(false, 255, value, "Awards");
-                if ("".equals(r)) {
-                    this.eaziAwards = value;
-                }
-                return r;
-            }
-
-            public String getPrequalLink() {
-                return prequalLink;
-            }
-
-            public String setPrequalLink(String value) {
-                String r = formUtils.validateURLField(false, 100, value, "Prequal Link");
-                if ("".equals(r)) {
-                    this.prequalLink = value;
-                }
-                return r;
-            }
-
-            public String getFfcDocLink() {
-                return ffcDocLink;
-            }
-
-            public String setFfcDocLink(String value) {
-                String r = formUtils.validateURLField(false, 100, value, "License Link");
-                if ("".equals(r)) {
-                    this.ffcDocLink = value;
-                }
-                return r;
-            }
-            public long getTeamId() {
-                return teamId;
-            }
-
-            public String setTeamId(String value) {
-                String r = formUtils.validateLongField(true, value, "Team ID");
-                if ("".equals(r)) {
-                    this.teamId = Long.parseLong(value);
-                }
-                return r;
-            }
-
-            public long getBrokerageId() {
-                return brokerageId;
-            }
-
-            public String setBrokerageId(String value) {
-                String r = formUtils.validateLongField(true, value, "Brokerage ID");
-                if ("".equals(r)) {
-                    this.brokerageId = Long.parseLong(value);
-                }
-                return r;
-            }
-            public String getEducation() {
-                return education;
-            }
-
-            public String setEducation(String value) {
-                String r = formUtils.validateStringField(false, 255, value, "Education");
-                if ("".equals(r)) {
-                    this.education = value;
-                }
-                return r;
-            }
-
-            public String getAddress() {
-                return address;
-            }
-
-            public String setAddress(String value) {
-	            String r = formUtils.validateStringField(true, 255, value, "Address");
-	            if ("".equals(r)) {
-	                this.address = value;
-	            }
-	            return r;
-            }
-   
-    
-    
-    
-    
     public boolean get(String agentId) {
         boolean r = false;
         try {
@@ -543,20 +534,18 @@ public class Agent {
                     db = new DbBean();
                 }
 
-                
+
                 String sGetData = "select id, username, first_name, last_name, phone, middle_name, locked, activated, google_id, email_ver, "
-                		+ "mobile_ver, id_doc_ver, pic_ver, image_url, fusion_id, crm_id, tax_no, ffc, ppra_role, latitude, longitude, updated, "
-                		+ "updated_by, bio, linkedInLink, fbLink, twitterLink, instaLink, tiktokLink, qualifications, languagesSpoken, "
-                		+ "eaziAwards, prequalLink, ffcDocLink, teamId, brokerageId, education, address "
-                		+ "from user where id = ?";
+                        + "mobile_ver, id_doc_ver, pic_ver, image_url, fusion_id, crm_id, tax_no, ffc, ppra_role, latitude, longitude, updated, "
+                        + "updated_by, bio, linkedInLink, fbLink, twitterLink, instaLink, tiktokLink, qualifications, languagesSpoken, "
+                        + "eaziAwards, prequalLink, ffcDocLink, teamId, brokerageId, education, address "
+                        + "from user where id = ?";
                 Object[] ObSQL = {agentId};
                 String[][] sD = db.PreparedSQLSelect(sGetData, ObSQL);
-                
-               
-                
+
 
                 if (sD != null && sD.length > 0) {
-                	
+
 
                     this.id = new Long(sD[0][0]).longValue();
                     this.username = sD[0][1];
@@ -583,7 +572,7 @@ public class Agent {
                     this.updated_by = new Long(sD[0][22]).longValue();
                     this.bio = sD[0][23];
                     this.linkedInLink = sD[0][24];
-                    this.fbLink = sD[0][25];   
+                    this.fbLink = sD[0][25];
                     this.twitterLink = sD[0][26];
                     this.instaLink = sD[0][27];
                     this.tiktokLink = sD[0][28];
@@ -595,7 +584,7 @@ public class Agent {
                     this.teamId = Long.parseLong(sD[0][34]);
                     this.brokerageId = Long.parseLong(sD[0][35]);
                     this.education = sD[0][36];
-                    this.address = sD[0][37]; 
+                    this.address = sD[0][37];
 
                     r = true;
                 }
@@ -624,10 +613,10 @@ public class Agent {
                         " mobile_ver = ?, " +
                         " id_doc_ver = ?, " +
                         " pic_ver = ?, " +
-                        
-                        " image_url = ?, fusion_id = ?, crm_id = ?, tax_no = ?, ffc = ?, ppra_role = ?, " + 
-                        " latitude = ?, longitude = ?, bio = ?, linkedInLink = ?, fbLink = ?, " + 
-                        
+
+                        " image_url = ?, fusion_id = ?, crm_id = ?, tax_no = ?, ffc = ?, ppra_role = ?, " +
+                        " latitude = ?, longitude = ?, bio = ?, linkedInLink = ?, fbLink = ?, " +
+
                         "twitterLink = ?, " +
                         "instaLink = ?, " +
                         "tiktokLink = ?, " +
@@ -640,10 +629,10 @@ public class Agent {
                         "brokerageId = ?, " +
                         "education = ?, " +
                         "address = ?, " +
-                        
+
                         " updated = now(), updated_by = ? " +
                         " where id = ? ";
-                
+
                 Object[] ObSQL = {
                         this.username,
                         this.first_name,
@@ -657,7 +646,7 @@ public class Agent {
                         this.mobile_ver,
                         this.id_doc_ver,
                         this.pic_ver,
-                        
+
                         this.image_url,
                         this.fusion_id,
                         this.crm_id,
@@ -669,7 +658,7 @@ public class Agent {
                         this.bio,
                         this.linkedInLink,
                         this.fbLink,
-                        
+
                         this.twitterLink,
                         this.instaLink,
                         this.tiktokLink,
@@ -682,11 +671,11 @@ public class Agent {
                         this.brokerageId,
                         this.education,
                         this.address,
-                        
+
                         uid,
                         this.id
                 };
-                
+
                 bOk = db.PreparedSQLUpIns(sSQL, ObSQL);
                 Audit(this.id);
             }
@@ -698,7 +687,7 @@ public class Agent {
         return bOk;
     }
 
-    
+
     public long Create(String uid, String username) {
         long bid = -1l;
         try {
@@ -706,27 +695,27 @@ public class Agent {
                 if (db == null) {
                     db = new DbBean();
                 }
-                
-			
-				// Now hash the plain-text password with the random salt and multiple
-				// iterations and then Base64-encode the value (requires less space than Hex):
-				
-				RandomNumberGenerator rng = new SecureRandomNumberGenerator();
-				Object salt = rng.nextBytes();
-				String sSaltString = salt.toString();
-				sSaltString = sSaltString.replaceAll("'", "b");
-				
-				String generatedPassword = StringUtils.left(java.util.UUID.randomUUID().toString(), 15);
-				String hashedPasswordBase64 = new Sha256Hash(generatedPassword, sSaltString,1024).toBase64();
-					
-				String user_pub_key = StringUtils.left(java.util.UUID.randomUUID().toString()+ java.util.UUID.randomUUID().toString(),100);
-				user_pub_key = sSaltString.replaceAll("'", "b");
-				
-				String sql = "insert into user (created, updated, updated_by, password,salt,user_pub_key) " +
+
+
+                // Now hash the plain-text password with the random salt and multiple
+                // iterations and then Base64-encode the value (requires less space than Hex):
+
+                RandomNumberGenerator rng = new SecureRandomNumberGenerator();
+                Object salt = rng.nextBytes();
+                String sSaltString = salt.toString();
+                sSaltString = sSaltString.replaceAll("'", "b");
+
+                String generatedPassword = StringUtils.left(java.util.UUID.randomUUID().toString(), 15);
+                String hashedPasswordBase64 = new Sha256Hash(generatedPassword, sSaltString, 1024).toBase64();
+
+                String user_pub_key = StringUtils.left(java.util.UUID.randomUUID().toString() + java.util.UUID.randomUUID().toString(), 100);
+                user_pub_key = sSaltString.replaceAll("'", "b");
+
+                String sql = "insert into user (created, updated, updated_by, password,salt,user_pub_key) " +
                         " values (now(), now(), " + uid.trim() + ", '" + hashedPasswordBase64 + "', '" + sSaltString + "', '" + user_pub_key + "') ";
-                
-				System.out.println("sql:" + sql) ;
-				
+
+                System.out.println("sql:" + sql);
+
                 bid = db.SQLIns(sql);
             }
         } catch (Exception e) {
@@ -735,9 +724,8 @@ public class Agent {
         }
         return bid;
     }
-    
-    
- 
+
+
     public boolean Audit(long agentId) {
         boolean bRV = false;
         try {
@@ -746,7 +734,7 @@ public class Agent {
                     db = new DbBean();
                 }
                 String sSQL = "insert into audit_user select * from user where id = ?";
-                Object[] ObSQL = { new Long(agentId) };
+                Object[] ObSQL = {new Long(agentId)};
 
                 if (!db.PreparedSQLUpIns(sSQL, ObSQL)) {
                     common.Logit("Failed to insert into audit_user for agentId: " + agentId);
@@ -760,6 +748,7 @@ public class Agent {
         }
         return bRV;
     }
-    
+
+
     // Getters a
 }
