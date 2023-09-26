@@ -91,7 +91,7 @@
 //    }
 
 
-    String username = comm.nnt(request.getParameter("username"));
+    String email = comm.nnt(request.getParameter("email"));
     String firstName = comm.nnt(request.getParameter("firstName"));
     String lastName = comm.nnt(request.getParameter("lastName"));
     String phone = comm.nnt(request.getParameter("phone"));
@@ -123,9 +123,9 @@
     String isLeadReferral = comm.nnt(request.getParameter("isLeadReferral"));
     String leadReferralType = comm.nnt(request.getParameter("leadReferralType"));
 
-    String usernameError = "";
-    String first_nameError = "";
-    String last_nameError = "";
+    String emailError = "";
+    String firstNameError = "";
+    String lastNameError = "";
     String phoneError = "";
     String address1Error = "";
     String address2Error = "";
@@ -169,7 +169,7 @@
                         sPageTitle = "<span style='text-decoration:line-through;'>" + serviceRequest.getFirstName() + " " + serviceRequest.getLastName() + " (Inactive)</span>";
                     }
 
-                    username = comm.nnt(serviceRequest.getEmail()).trim();
+                    email = comm.nnt(serviceRequest.getEmail()).trim();
                     firstName = comm.nnt(serviceRequest.getFirstName()).trim();
                     lastName = comm.nnt(serviceRequest.getLastName()).trim();
                     phone = comm.nnt(serviceRequest.getPhone()).trim();
@@ -213,9 +213,9 @@
 
                 String validationErrors = "";
 
-                usernameError = comm.nnt(serviceRequest.setUsername(username));
-                first_nameError = comm.nnt(serviceRequest.setFirstName(firstName));
-                last_nameError = comm.nnt(serviceRequest.setLastName(lastName));
+                emailError = comm.nnt(serviceRequest.setEmail(email));
+                firstNameError = comm.nnt(serviceRequest.setFirstName(firstName));
+                lastNameError = comm.nnt(serviceRequest.setLastName(lastName));
                 phoneError = comm.nnt(serviceRequest.setPhone(phone));
                 address1Error = comm.nnt(serviceRequest.setAddress1(address1));
                 address2Error = comm.nnt(serviceRequest.setAddress2(address2));
@@ -245,36 +245,7 @@
                 isLeadReferralError = comm.nnt(serviceRequest.setLeadReferral(isLeadReferral));
                 leadReferralTypeError = comm.nnt(serviceRequest.setLeadReferralType(leadReferralType, serviceRequest.isLeadReferral()));
 
-                // special validation
-                if (!serviceRequest.isReferred()) {
-                    referralAgentNameError = "";
-                    referralFirmError = "";
-                    referralFeeError = "";
-                }
-                if (!serviceRequest.isLeadReferral()) {
-                    leadReferralTypeError = "";
-                }
-                if (!serviceRequest.isTransactionManaged()) {
-                    clientPhoneNumberError = "";
-                }
-
-
-//                if (comm.isIntMoreThanZero(teamId) != null && comm.isIntMoreThanZero(brokerageId) != null) {
-//
-//                    // check team belongs to brokerage
-//                    Team team = new Team();
-//                    if (team.get(teamId)) {
-//                        if (!brokerageId.equals("" + team.getBrokerageId())) {
-//                            teamIdError = "This Team doesn't belong to the Brokerage.";
-//                        }
-//                    } else {
-//                        teamIdError = "Error checking if this Team doesn't belongs to the Brokerage.";
-//
-//                    }
-//
-//                }
-
-                validationErrors = usernameError + first_nameError + last_nameError + phoneError + address1Error + address2Error + cityError +
+                validationErrors = emailError + firstNameError + lastNameError + phoneError + address1Error + address2Error + cityError +
                         stateError + zipcodeError + isTransactionManagedError + clientPhoneNumberError + mlsListingNumberError + userTypeError + propertyPriceError + propertyAreaError +
                         bedroomCountError + bathroomCountError + yearBuiltError + propertySizeError + otherInfoError + commissionPercentageError +
                         contactFirstNameError + contactLastNameError + contactEmailError + contactPhoneNumberError + isReferredError + referralAgentNameError + referralFirmError +
@@ -286,26 +257,13 @@
                     // adding
 
                     if ("".equals(validationErrors)) {
-
-                        long newId = serviceRequest.Create("99", serviceRequest);
+                        //using a statis UID
+                        long newId = serviceRequest.Create("01", serviceRequest);
                         if (newId > 0l) {
                             serviceRequest.setId("" + newId);
                             id = "" + newId;
                         } else {
                             sError = "Unable to create " + objectName + ", please try again.";
-                        }
-
-                        if ("".equals(sError)) {
-
-//                            if (serviceRequest.update(me.getId())) {
-//
-//                                response.sendRedirect(lm.GetSecureServer() + "/Admin/" + objectName + ".jsp?id=" + id + "&prOk=2");
-//
-//                            } else {
-//
-//                                sError = "Unable to update the " + objectName + ", please try again.";
-//                                comm.LogAndNotifyMailOnly("Unable to update " + objectName + " for " + id);
-//                            }
                         }
 
                     } else {
@@ -409,9 +367,9 @@
                         <%
                             StringBuffer formElements = new StringBuffer();
                             formElements.append(comm.nnt(formUtils.getHeadingDiv(1, "Property Information")));
-                            formElements.append(comm.nnt(formUtils.getTextInput("username", "Agent Email <span class=\"red-text\">*</span>", username, null, usernameError, null, 0, 255)));
-                            formElements.append(comm.nnt(formUtils.getTextInput("firstName", "Agent First Name <span class=\"red-text\">*</span>", firstName, null, first_nameError, null, 0, 100)));
-                            formElements.append(comm.nnt(formUtils.getTextInput("lastName", "Agent Last Name <span class=\"red-text\">*</span>", lastName, null, last_nameError, null, 0, 100)));
+                            formElements.append(comm.nnt(formUtils.getTextInput("email", "Agent Email <span class=\"red-text\">*</span>", email, null, emailError, null, 0, 255)));
+                            formElements.append(comm.nnt(formUtils.getTextInput("firstName", "Agent First Name <span class=\"red-text\">*</span>", firstName, null, firstNameError, null, 0, 100)));
+                            formElements.append(comm.nnt(formUtils.getTextInput("lastName", "Agent Last Name <span class=\"red-text\">*</span>", lastName, null, lastNameError, null, 0, 100)));
                             formElements.append(comm.nnt(formUtils.getTextInput("phone", "Phone Number <span class=\"red-text\">*</span>", phone, null, phoneError, null, 0, 20)));
                             formElements.append(comm.nnt(formUtils.getTextInput("address1", "Property Address <span class=\"red-text\">*</span>", address1, null, address1Error, null, 0, 255)));
                             formElements.append(comm.nnt(formUtils.getTextInput("address2", "Apartment, suite, etc", address2, null, address2Error, null, 0, 255)));

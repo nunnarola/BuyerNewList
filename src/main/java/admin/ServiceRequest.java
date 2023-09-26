@@ -57,7 +57,7 @@ public class ServiceRequest {
         return r;
     }
 
-    public String setUsername(String value) {
+    public String setEmail(String value) {
         String r = formUtils.validateStringField(true, 45, value, "Agent Email");
         if ("".equals(r)) {
             if (common.isValidEmailAddress(value)) {
